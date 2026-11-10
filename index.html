@@ -1,0 +1,2005 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#100e24">
+<meta name="description" content="从 MBTI 偏好与星座的象征故事，探索你们的相处方式。双星引力，给每一次相遇多一点理解。">
+<title>双星引力 · 看见你们的相处宇宙</title>
+<style>
+:root{--bg:#100e24;--panel:rgba(29,25,49,.82);--text:#f4efff;--muted:#b9b1cc;--line:rgba(215,198,255,.15);--a:#b39aff;--az:#ff91bd;--b:#82d5f7;--bz:#ffc087;--radius:25px;font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;color:var(--text);background:var(--bg);font-synthesis:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{position:relative;isolation:isolate;margin:0;min-width:0;background:#100e24;line-height:1.65}button,input,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed}a{color:#d5c5ff;text-underline-offset:4px}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #e7b4ff;outline-offset:5px}[hidden]{display:none!important}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.4}button{color:inherit}::selection{background:#a576d7;color:white}
+.sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1;background:radial-gradient(ellipse at 14% 32%,#48305c55,transparent 49%),radial-gradient(ellipse at 90% 58%,#26395b50,transparent 50%),#100e24}.sky::before{content:"";position:absolute;inset:0;opacity:.55;background-image:radial-gradient(1px 1px at 6% 18%,#fff 90%,transparent),radial-gradient(1px 1px at 22% 64%,#fff 90%,transparent),radial-gradient(1.5px 1.5px at 42% 14%,#d7c6ff 90%,transparent),radial-gradient(1px 1px at 61% 73%,#fff 90%,transparent),radial-gradient(1px 1px at 78% 23%,#fff 90%,transparent),radial-gradient(1.5px 1.5px at 93% 83%,#fff 90%,transparent);background-size:510px 470px}.sky::after{content:"";position:absolute;width:800px;height:800px;top:-580px;left:calc(50% - 400px);border-radius:50%;background:#a886ff22;filter:blur(95px)}
+.shell{max-width:1280px;margin:auto;padding:0 48px}.header{height:100px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{border:0;background:none;display:flex;gap:12px;align-items:center;padding:0;text-align:left}.brandmark{width:37px;height:37px;position:relative;display:grid;place-items:center}.brandmark::before,.brandmark::after{content:"";position:absolute;width:33px;height:17px;border:1.4px solid #c5a4ff;border-radius:50%;transform:rotate(-38deg)}.brandmark::after{transform:rotate(38deg);border-color:#f2a8c2}.brandmark i{width:9px;height:9px;border-radius:50%;background:#eadbff;box-shadow:0 0 16px #c599ff}.brand strong{display:block;font-size:20px;letter-spacing:3px}.brand small{display:block;font-size:9px;letter-spacing:3.5px;color:var(--muted);line-height:1.5}.header-right{display:flex;align-items:center;gap:25px}.linkbtn{border:0;background:none;color:var(--muted);font-size:12px;padding:8px 0}.linkbtn:hover{color:white}
+.home{padding:58px 0 50px}.hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:center;min-height:690px}.eyebrow{display:flex;align-items:center;gap:9px;font-size:10px;letter-spacing:3px;color:#c8b3e9}.eyebrow::before{content:"";width:22px;height:1px;background:#b997e7}.intro h1{font-size:clamp(35px,3.55vw,50px);letter-spacing:1px;font-weight:500;margin:21px 0 22px;line-height:1.55}.gradient-text{background:linear-gradient(90deg,#d6b4ff,#f5b1cf 55%,#ffc599);-webkit-background-clip:text;background-clip:text;color:transparent}.intro-copy{font-size:14px;line-height:2;color:var(--muted);max-width:360px}.small-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.small-tags span{font-size:10px;color:#d4c4e8;padding:5px 11px;background:#d4baff08;border:1px solid #d4baff14;border-radius:30px}.orbit-art{position:relative;height:260px;margin-top:23px;display:grid;place-items:center;isolation:isolate}.orbit-art svg{width:100%;height:100%;overflow:visible}.orbit-note{position:absolute;bottom:3px;color:#9e91b7;letter-spacing:3px;font-size:9px}.orbit-art::before{content:"";position:absolute;width:240px;height:150px;background:#b278d41c;filter:blur(35px);border-radius:50%;z-index:-1}
+.entry-panel{position:relative;border:1px solid #d6baff26;background:linear-gradient(130deg,#34274460,#201d3570);border-radius:30px;padding:29px;box-shadow:0 22px 85px #0003,inset 0 1px #ffffff09;backdrop-filter:blur(10px)}.entry-panel::before{content:"";position:absolute;top:-1px;left:18%;right:18%;height:1px;background:linear-gradient(90deg,transparent,#e0b3e7aa,transparent)}.panel-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.panel-top h2{font-size:18px;font-weight:500;letter-spacing:2px}.panel-top span{font-size:9px;letter-spacing:2px;color:#9f91b4}.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.person{min-width:0;border:1px solid #e2caff12;border-radius:18px;background:#0e0d211f;padding:20px 17px}.person-b{background:#91c8ff05}.person-heading{display:flex;align-items:center;gap:10px;margin-bottom:23px}.avatar{display:grid;place-items:center;width:35px;height:35px;border:1px solid #dba4ef4d;border-radius:50%;color:#e4b6ff;background:#b975ee12;font-family:Georgia,serif;font-size:18px}.person-b .avatar{border-color:#9ac8ef44;color:#a6d2f2;background:#75b9ee10}.person-heading h3{font-size:14px;font-weight:500}.person-heading small{display:block;font-size:8px;letter-spacing:2px;color:#9f91b4}.field{display:block;margin-top:18px}.field-label{display:flex;justify-content:space-between;font-size:11px;color:#cfc1df;margin-bottom:8px}.field-label i{font-size:9px;letter-spacing:1px;font-style:normal;color:#8e809f}.select-wrap{position:relative}.select-wrap::after{content:"⌄";position:absolute;right:11px;top:8px;color:#a897bb;pointer-events:none;font-size:16px}.field select{min-width:0;appearance:none;width:100%;height:45px;border:1px solid #d9c5ef21;border-radius:9px;background:#131125;color:#eee7f9;padding:0 27px 0 12px;font-size:12px;transition:border-color .2s}.field select:invalid{color:#94879f}.field select:hover{border-color:#bd9de466}.field select option{background:#1a172d;color:#eee7f9}.primary{border:1px solid #ffffff20;border-radius:12px;min-height:53px;background:linear-gradient(110deg,#9a75d6,#b985c5 56%,#d7a0ac);color:white;box-shadow:0 5px 24px #b47cd32b;font-size:14px;letter-spacing:3px;font-weight:500;transition:transform .2s,filter .2s}.primary:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.12)}.primary:disabled{filter:saturate(.25);opacity:.65}.submit{width:100%}.submit span{margin-left:11px}.form-error{font-size:12px;color:#ffbec9;background:#fb8da412;border:1px solid #fb8da430;border-radius:9px;padding:10px 12px;margin:12px 0}.intro-bottom{display:flex;align-items:center;gap:13px;color:#a395b6;font-size:11px;line-height:1.8;margin-top:32px}.intro-bottom b{font-size:22px;font-weight:400;color:#d3b3ef}.footnote{max-width:790px;text-align:center;margin:42px auto 0;padding:22px 32px;border:1px solid #c6acdf12;border-radius:14px;font-size:11px;color:#a99ab8;line-height:2}.footnote strong{font-weight:400;color:#ccb8de}
+.footer{border-top:1px solid var(--line);padding:24px 0 28px;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#8f819f;font-size:10px;letter-spacing:1px}.footer span:last-child{font-family:Georgia,serif;font-style:italic;font-size:12px;color:#b5a3c3}
+.result-view{padding:32px 0 65px;isolation:isolate}.report-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.tool-group{display:flex;gap:15px}.textbtn{border:0;background:none;padding:8px 0;color:#d5c6e5;font-size:11px}.report-hero{text-align:center;padding:42px 0 37px}.report-hero .eyebrow{justify-content:center}.report-hero .eyebrow::before{display:none}.report-hero h1{font-size:clamp(27px,3.6vw,43px);font-weight:500;letter-spacing:2px;margin:14px 0}.report-sub{color:#c6b6d5;max-width:700px;margin:auto;font-size:13px;line-height:2}.match-layout{margin-top:29px;display:grid;grid-template-columns:1fr 240px 1fr;align-items:center;gap:18px;max-width:900px;margin-left:auto;margin-right:auto}.match-person{padding:23px 18px;border:1px solid var(--line);border-radius:20px;background:#16122566}.match-person h2{font-size:14px;font-weight:400;color:#d2c4e1;margin-bottom:6px}.type-large{font-size:30px;letter-spacing:5px;font-family:Georgia,"Microsoft YaHei",serif}.match-zodiac{font-size:13px;color:#d6c9e5;margin:7px 0}.gender-label{font-size:10px;color:#9f91b1}.color-chips{display:flex;justify-content:center;gap:10px;font-size:10px;color:#bdadcd;flex-wrap:wrap;margin-top:16px}.color-chips span{display:flex;align-items:center;gap:5px}.swatch{display:inline-block;width:9px;height:9px;border-radius:50%;box-shadow:0 0 10px currentColor}.score-orbit{width:220px;height:220px;position:relative;margin:auto;display:flex;align-items:center;justify-content:center;flex-direction:column;border:1px solid #ffffff0d;border-radius:50%;background:radial-gradient(circle,#c1a3e414,transparent 67%)}.score-orbit::before{content:"";position:absolute;inset:9px;border-radius:50%;background:conic-gradient(from 35deg,var(--a),var(--az),var(--b),var(--bz),var(--a));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 0);box-shadow:0 0 22px #ffffff20}.score-orbit::after{content:"✦";position:absolute;top:18px;right:35px;color:var(--b);font-size:20px}.score-number{font-size:65px;font-weight:400;line-height:1.1;letter-spacing:-3px;font-family:Georgia,serif;background:linear-gradient(120deg,var(--a),#fff,var(--b));background-clip:text;-webkit-background-clip:text;color:transparent}.score-number small{font-size:16px;letter-spacing:0}.score-label{font-size:11px;letter-spacing:2px;color:#e5d6ef;margin-top:10px}.score-note{font-size:9px;color:#a99ab9;margin-top:4px}.result-note{text-align:center;color:#a99abb;font-size:10px;line-height:1.9;margin:22px auto 0;max-width:720px}.section-heading{display:flex;align-items:center;gap:13px;margin:37px 0 20px}.section-heading .num{font:italic 23px Georgia,serif;color:#b8a5cd}.section-heading h2{font-size:20px;font-weight:500;letter-spacing:2px}.section-heading small{margin-left:auto;font-size:9px;letter-spacing:2px;color:#9583a8}.section-heading::after{content:"";height:1px;flex:1;background:var(--line)}.dimensions{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.dimension{padding:23px;border:1px solid var(--line);border-radius:18px;background:#17132688}.dimension-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}.dimension h3{font-size:14px;font-weight:500}.dimension-tag{color:#cfb3e8;font-size:10px;background:#c8a3ec0c;border:1px solid #c8a3ec1a;border-radius:20px;padding:3px 8px}.dimension p{color:#bdb0ca;font-size:12px;line-height:1.95}.dim-track{height:3px;background:#e9d7ff0d;border-radius:5px;margin-top:18px;overflow:hidden}.dim-fill{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--a),var(--b));opacity:.8}.dim-value{font-size:9px;color:#9785a8;margin-top:6px;text-align:right}.profiles{display:grid;grid-template-columns:1fr 1fr;gap:18px}.profile-card{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,var(--a-glow),#171326aa 60%)}.profile-card:nth-child(2){background:linear-gradient(145deg,var(--b-glow),#171326aa 60%)}.profile-label{font-size:10px;color:#cbb5e0;letter-spacing:2px;margin-bottom:10px}.profile-card h3{font-size:17px;font-weight:500;margin-bottom:16px;line-height:1.7}.profile-card p{font-size:12px;color:#c2b2ce;line-height:2;margin-top:10px}.patterns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pattern{padding:25px;border:1px solid var(--line);border-radius:19px;background:#181427aa}.pattern:last-child:nth-child(odd){grid-column:1 / -1}.scene-index{font:italic 12px Georgia,serif;color:#a88dbb}.pattern h3{font-size:16px;font-weight:500;margin:7px 0 15px}.scene{font-size:12px;color:#eddfef;line-height:2;padding-left:13px;border-left:2px solid var(--a);margin-bottom:15px}.pattern p{font-size:12px;color:#bcaac9;line-height:2}.action{margin-top:14px;padding-top:14px;border-top:1px solid #d9b9ee12}.action b{font-size:10px;color:#d4b8e6;font-weight:400;display:block;margin-bottom:5px;letter-spacing:1px}.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tip{padding:24px 21px;border:1px solid var(--line);border-radius:18px;background:#18142799}.tip-num{font:italic 22px Georgia,serif;color:#b99acb;display:block;margin-bottom:14px}.tip h3{font-size:14px;font-weight:500;margin-bottom:12px}.tip p{font-size:12px;line-height:2;color:#bcaac9}.blessing{position:relative;overflow:hidden;text-align:center;padding:53px 40px;margin-top:42px;border:1px solid #e2c2ed26;border-radius:24px;background:linear-gradient(120deg,var(--a-glow),#27203677,var(--b-glow))}.blessing .star{font-size:26px;color:#ead1f3;margin-bottom:15px}.blessing small{font-size:9px;letter-spacing:4px;color:#c9b6d4}.blessing h2{font-size:23px;letter-spacing:4px;font-weight:400;margin:13px 0 22px}.blessing p{max-width:700px;margin:auto;color:#e3d2eb;font-size:14px;line-height:2.2;white-space:pre-line}.blessing::after{content:"✧";position:absolute;right:5%;bottom:20px;font-size:100px;color:#e1c7ec0b}.result-bottom{margin-top:27px;text-align:center}.secondary{border:1px solid #d4b4e744;background:#bf99d10b;border-radius:10px;padding:11px 23px;font-size:12px;color:#dfcbed;letter-spacing:1px}.secondary:hover{background:#bf99d11a}.report-meta{font-size:9px;color:#95829f;text-align:center;margin-top:17px}.formula-details{margin-top:25px;border:1px solid var(--line);border-radius:13px;background:#17132688;padding:14px 20px;font-size:11px;color:#b8a6c4}.formula-details summary{cursor:pointer;color:#d5bfdf;min-height:25px}.formula-details p{margin-top:12px;line-height:2}.formula-details ul{padding-left:18px;line-height:2}.palette-list{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:15px 0}.palette-item{font-size:10px;border:1px solid var(--line);padding:8px;border-radius:7px;display:flex;align-items:center;gap:7px;color:#c3b2d0}
+dialog{color:#eee5f5;background:#201a30;border:1px solid #b793d844;border-radius:24px;max-width:760px;width:calc(100% - 32px);max-height:88vh;padding:0;box-shadow:0 30px 120px #0008}dialog::backdrop{background:#080613bd;backdrop-filter:blur(6px)}.modal-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:23px 28px;background:#201a30;z-index:1;border-bottom:1px solid var(--line)}.modal-head h2{font-size:19px;font-weight:500}.close{border:1px solid var(--line);background:#ffffff06;border-radius:50%;width:30px;height:30px;font-size:20px;line-height:1}.modal-content{padding:25px 28px 30px}.modal-content h3{font-size:14px;margin:23px 0 10px;font-weight:500;color:#e2c8f3}.modal-content h3:first-child{margin-top:0}.modal-content p,.modal-content li{font-size:12px;color:#c3b2cf;line-height:2}.modal-content ul{padding-left:18px}.modal-content a{font-size:12px;word-break:break-word}.source{margin:7px 0}.legend-caption{font-size:11px;color:#b4a0c2;margin:13px 0}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);padding:12px 20px;border:1px solid #c7a3e64d;background:#30213f;color:#eedcf5;border-radius:11px;z-index:20;font-size:12px;max-width:90vw;text-align:center;box-shadow:0 15px 45px #0006}.busy-spinner{display:inline-block;width:13px;height:13px;vertical-align:middle;border:1px solid #ffffff55;border-top-color:white;border-radius:50%;animation:spin .8s linear infinite;margin-left:10px}@keyframes spin{to{transform:rotate(360deg)}}
+@media(min-width:1500px){.home{padding-top:75px;padding-bottom:65px}.hero{min-height:720px}}@media(max-width:1050px){.shell{padding:0 30px}.hero{gap:27px;grid-template-columns:.85fr 1.15fr}.entry-panel{padding:23px}.person{padding:17px 12px}.intro h1{font-size:36px}.match-layout{grid-template-columns:1fr 210px 1fr}.score-orbit{width:200px;height:200px}.score-number{font-size:58px}}@media(max-width:800px){.shell{padding:0 24px}.header{height:84px}.hero{grid-template-columns:1fr;gap:32px;min-height:auto}.home{padding-top:36px}.intro{text-align:center}.intro .eyebrow{justify-content:center}.intro h1{font-size:39px;line-height:1.5;margin:17px 0}.intro-copy{margin:auto;max-width:440px}.small-tags{justify-content:center;margin-top:20px}.orbit-art{height:190px;max-width:400px;margin:16px auto 0}.intro-bottom{display:none}.entry-panel{max-width:620px;width:100%;margin:auto;padding:26px}.footnote{margin-top:28px}.match-layout{grid-template-columns:1fr 180px 1fr;gap:10px}.score-orbit{width:176px;height:176px}.score-number{font-size:49px}.match-person{padding:19px 10px}.type-large{font-size:25px}.color-chips{font-size:9px;gap:6px}.tips{grid-template-columns:1fr}.tip{display:grid;grid-template-columns:30px 1fr;gap:0 12px}.tip-num{grid-row:span 2;margin:0}.tip h3{margin-bottom:8px}.section-heading small{display:none}.palette-list{grid-template-columns:repeat(3,1fr)}.footer{font-size:9px}}
+/* Shared readable type and controls for desktop, tablet and phone. */
+.brand{min-height:44px}.score-label{font-size:13px}.score-note{font-size:12px}
+.quota-badge{white-space:nowrap;padding:5px 10px;border:1px solid var(--line);border-radius:999px;color:#ead9fa;background:#bd8eff12;font-size:13px;line-height:1.6}
+.submit{margin-top:16px}
+.expiry-panel{max-width:520px;margin:40px auto;padding:30px 20px;text-align:center;border:1px solid var(--line);border-radius:20px;background:#bda3ec0a}
+.expiry-panel h1{font-size:26px;margin-bottom:9px}.expiry-panel p{font-size:15px;color:#d7c5e6}
+.field-label{font-size:13px}.field select{font-size:14px;height:48px}
+.intro-copy,.report-sub{font-size:15px;line-height:1.9}
+.dimension p,.profile-card p,.scene,.pattern p,.tip p{font-size:15px;line-height:1.9}
+.dimension h3,.tip h3{font-size:16px}.profile-card h3,.pattern h3{font-size:18px}.result-note,.dim-value,.report-meta,.formula-details,.palette-item{font-size:12px;line-height:1.85}
+.dimension-tag,.profile-label,.action b,.gender-label,.color-chips{font-size:12px}
+.linkbtn,.textbtn{font-size:14px;min-height:44px}
+.primary,.secondary{font-size:15px;min-height:50px}.close{width:44px;height:44px;flex-shrink:0}
+.formula-details summary{min-height:44px;padding:9px 0;font-size:14px;line-height:1.8}
+.footnote{font-size:13px;line-height:1.9}.modal-content p,.modal-content li,.modal-content a{font-size:14px;line-height:1.9}
+.modal-content h3{font-size:16px}.footer{font-size:11px}
+@media screen and (min-width:761px) and (max-width:1100px){
+ .hero{grid-template-columns:minmax(0,1fr);min-height:auto;gap:32px}.home{padding:38px 0}
+ .intro{text-align:center}.intro .eyebrow{justify-content:center}.intro-copy{max-width:560px;margin:auto}
+ .small-tags{justify-content:center}.orbit-art{max-width:440px;height:175px;margin:18px auto 0}.intro-bottom{display:none}
+ .entry-panel{max-width:700px;width:100%;padding:28px;margin-inline:auto}.people-grid{gap:20px}.person{padding:22px 20px}
+ .field-label{font-size:15px}.field select{font-size:16px;min-height:50px;height:auto;padding:12px 34px 12px 12px}
+ .report-sub,.dimension p,.profile-card p,.scene,.pattern p,.tip p{font-size:16px;line-height:1.9}
+ .tips{grid-template-columns:repeat(2,minmax(0,1fr))}.tip{display:block}.tip-num{margin-bottom:12px}.result-note,.report-meta,.formula-details{font-size:13px}
+}
+/* Mobile reading and touch layout; leave browser zoom available. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+main,.hero,.entry-panel,.person,.match-person,.dimension,.profile-card,.pattern,.tip{min-width:0}
+button,select{touch-action:manipulation}
+@media screen and (max-width:800px), screen and (orientation:landscape) and (max-height:500px) and (max-width:1000px){
+ .hero{grid-template-columns:minmax(0,1fr);min-height:auto;gap:28px}.entry-panel{max-width:620px;width:100%;margin-inline:auto}
+ .field-label{font-size:14px}.field-label i{display:none}
+ .field select{font-size:16px;min-height:48px;height:auto;padding:12px 34px 12px 12px;line-height:1.5}
+ .select-wrap{display:block}.select-wrap::after{top:10px;right:14px}
+ .linkbtn,.textbtn{min-height:44px;font-size:14px}.close{width:44px;height:44px;flex-shrink:0}
+ .primary,.secondary{min-height:52px;font-size:16px}.person-heading h3{font-size:16px}
+ .person-heading small{font-size:10px}.panel-top h2{font-size:20px;letter-spacing:1px}
+ .intro-copy{font-size:16px}.report-sub{font-size:16px;line-height:1.9}
+ .dimension p,.profile-card p,.scene,.pattern p,.tip p,.blessing p{font-size:16px;line-height:1.9}
+ .dimension h3,.tip h3{font-size:17px}.pattern h3,.profile-card h3{font-size:19px}
+ .dimension-tag,.profile-label,.action b,.color-chips,.gender-label{font-size:13px}.result-note,.dim-value,.report-meta,.formula-details,.palette-item,.legend-caption{font-size:13px;line-height:1.85}
+ .form-error{font-size:14px}
+ .footnote{font-size:13px;line-height:1.9}.footer,.footer span:last-child{font-size:12px;letter-spacing:0}
+ .tool-group{flex-wrap:wrap}.textbtn{white-space:normal;overflow-wrap:anywhere}
+ .formula-details summary{min-height:44px;padding:9px 0;font-size:14px}
+ .modal-content p,.modal-content li,.modal-content a{font-size:15px;line-height:1.9}
+ .modal-content h3{font-size:17px}.palette-item{min-width:0;overflow-wrap:anywhere}
+ dialog{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overscroll-behavior:contain}
+ .toast{font-size:14px;bottom:calc(20px + env(safe-area-inset-bottom))}
+}
+@media screen and (max-width:760px){
+ .shell{max-width:512px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+ .header{min-height:62px;height:auto;padding:8px 0;gap:12px;align-items:center}
+ .brand{gap:9px;min-height:44px;flex-shrink:0}.brand strong{font-size:19px;letter-spacing:1px}
+ .brand small{display:none}.brandmark{width:31px;flex-shrink:0}
+ .brandmark::before,.brandmark::after{width:29px}.header-right{gap:8px;min-width:0}
+ .header .linkbtn{font-size:13px;padding:10px 0;white-space:normal}
+ .quota-badge{font-size:12px;padding:4px 8px}
+ .home{padding:18px 0 26px}.hero{gap:8px}
+ .intro h1{font-size:clamp(21px,6vw,26px);letter-spacing:0;line-height:1.5;margin:0;text-wrap:balance}
+ .intro h1 br,.intro .eyebrow,.intro-copy,.small-tags,.orbit-art,.intro-bottom{display:none}
+ .entry-panel{padding:0;border:0;background:none;box-shadow:none;backdrop-filter:none}
+ .entry-panel::before{display:none}
+ .panel-top{display:block;margin-bottom:13px;text-align:center}
+ .panel-top h2{font-size:13px;line-height:1.7;letter-spacing:1px;color:#c6b0d8}
+ .panel-top>span{display:none}.people-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+ .person{display:grid;grid-template-columns:minmax(0,1fr) minmax(108px,.55fr);gap:11px;padding:14px;border-radius:15px;background:#bda3ec0a}
+ .person-b{background:#91c8ff09}
+ .person-heading,.person .field:first-of-type{grid-column:1 / -1}
+ .person-heading{gap:9px;margin:0}.person-heading h3{font-size:17px}.person-heading small{display:none}
+ .avatar{width:29px;height:29px;font-size:16px;flex-shrink:0}
+ .field{min-width:0;margin:0}.field-label{font-size:13px;margin-bottom:5px}
+ .field select{font-size:16px;width:100%;max-width:100%;min-height:46px;padding:10px 30px 10px 10px}
+ .select-wrap::after{top:9px;right:11px}
+ .primary{min-height:48px;font-size:15px;letter-spacing:1px}
+ .submit{display:block;width:min(360px,100%);margin:14px auto 0}.submit span{margin-left:8px}
+ .footnote{padding:13px 14px;margin-top:18px;text-align:left;font-size:12px}.footnote br{display:none}
+ .footnote strong{display:block;margin-bottom:5px;color:#ddc9ef}
+ .footer{align-items:flex-start;flex-direction:column;gap:8px;padding:23px 0 calc(24px + env(safe-area-inset-bottom));line-height:1.8}
+ .result-view{padding:9px 0 30px}.report-tools{gap:3px 7px;margin-bottom:8px}
+ .tool-group{gap:3px 9px}.report-tools .textbtn{font-size:12px;padding:7px 0}
+ .report-hero{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px;padding:17px 14px;border:1px solid var(--line);border-radius:19px;background:#c8a8eb08}
+ .report-hero>.eyebrow,.report-hero h1,.report-sub,.score-orbit,.result-note{grid-column:1 / -1}
+ .report-hero .eyebrow{grid-row:1;font-size:10px;letter-spacing:1.2px;line-height:1.7}
+ .match-layout{display:contents}
+ .match-person{grid-row:2;padding:12px 8px;border-radius:13px}
+ .match-person h2{font-size:13px;line-height:1.6;margin-bottom:3px}
+ .type-large{font-size:25px;letter-spacing:2px}
+ .match-zodiac{font-size:13px;line-height:1.7;overflow-wrap:anywhere;margin:4px 0}.gender-label{font-size:12px}
+ .color-chips{font-size:12px;gap:4px;flex-direction:column;align-items:center;margin-top:7px}.color-chips span{max-width:100%;overflow-wrap:anywhere}
+ .report-hero h1{grid-row:3;font-size:clamp(22px,6vw,28px);letter-spacing:0;line-height:1.5;margin:1px 0 0;overflow-wrap:anywhere;text-wrap:balance}
+ .report-sub{grid-row:4;font-size:14px;line-height:1.85;text-align:left;margin:0}
+ .score-orbit{grid-row:5;display:grid;grid-template-columns:auto auto;gap:1px 10px;align-items:center;justify-content:center;justify-items:start;width:100%;height:auto;margin:0;padding:6px 0;border:0;border-radius:0;background:none}
+ .score-orbit::before,.score-orbit::after{display:none}
+ .score-number{grid-row:1 / span 2;font-size:46px;white-space:nowrap}
+ .score-label{font-size:13px;letter-spacing:.5px;margin:0;align-self:end}.score-note{font-size:11px;margin:0;align-self:start;text-align:left}
+ .result-note{grid-row:6;font-size:12px;line-height:1.8;margin:0;text-align:left}.result-note br{display:none}
+ .dimensions,.profiles,.patterns,.tips{grid-template-columns:minmax(0,1fr);gap:15px}
+ .section-heading{margin:31px 0 17px;gap:10px;align-items:flex-start}
+ .section-heading .num{font-size:24px;flex-shrink:0;line-height:1.4}
+ .section-heading h2{font-size:21px;letter-spacing:0;line-height:1.55;min-width:0;overflow-wrap:anywhere}
+ .section-heading small,.section-heading::after{display:none}
+ .dimension,.profile-card,.pattern{padding:23px 19px}.dimension-header{gap:10px;flex-wrap:wrap}
+ .dimension-tag{font-size:12px;line-height:1.6}.dim-value{font-size:12px}
+ .profile-label{font-size:13px;letter-spacing:.5px;overflow-wrap:anywhere}.profile-card h3{line-height:1.65;overflow-wrap:anywhere}
+ .scene-index{font-size:14px}.pattern h3{font-size:19px;line-height:1.65}.scene{padding-left:12px}
+ .action b{font-size:14px;letter-spacing:0}.tip{display:block;padding:23px 19px}
+ .tip-num{font-size:23px;margin-bottom:10px}.tip h3{font-size:18px;line-height:1.7;margin-bottom:11px}
+ .blessing{margin-top:31px;padding:30px 21px}.blessing small{font-size:10px;letter-spacing:2px}
+ .blessing h2{font-size:23px;line-height:1.6;letter-spacing:0;margin:13px 0 18px}.blessing p{font-size:16px;line-height:2}
+ .result-bottom{margin-top:23px}.secondary{width:100%;min-height:52px;font-size:15px;padding:13px 15px;white-space:normal;letter-spacing:0}
+ .formula-details{padding:12px 17px;font-size:14px}.formula-details summary{font-size:14px;line-height:1.8}
+ .formula-details p{line-height:1.9;overflow-wrap:anywhere}.report-meta{font-size:12px;line-height:1.9;overflow-wrap:anywhere}
+ dialog{width:calc(100% - 24px);border-radius:20px}.modal-head{padding:15px 18px;gap:12px;align-items:center}
+ .modal-head h2{font-size:20px;line-height:1.5;min-width:0}.modal-content{padding:21px 19px 27px}
+ .modal-content p[style]{font-size:12px!important}.palette-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .palette-item{font-size:13px;padding:11px 9px;line-height:1.75}.swatch{flex-shrink:0}
+ .toast{width:max-content;max-width:calc(100vw - 32px);padding:13px 16px;line-height:1.8}
+}
+@media screen and (max-width:350px){
+ .shell{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+ .brand strong{font-size:18px}.header .linkbtn{font-size:13px}
+ .person{padding:12px;gap:10px}.report-hero{padding:14px 12px}
+ .dimension,.profile-card,.pattern,.tip{padding:21px 17px}
+ .palette-list{grid-template-columns:minmax(0,1fr)}
+}
+.mode-picker{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;margin-bottom:16px;border:1px solid var(--line);border-radius:15px;background:#100e22a6}
+.mode-picker button{min-width:0;min-height:44px;padding:8px 12px;border:1px solid transparent;border-radius:10px;background:transparent;color:#d3c4e6;font-size:15px;font-weight:600;cursor:pointer}
+.mode-picker button[aria-pressed="true"]{border-color:#d7b8fd59;background:#b891ea28;color:#fff3ff}
+.mode-picker button:focus-visible{outline:2px solid #e1bcfc;outline-offset:2px}
+.people-grid[data-mode="self"]{grid-template-columns:minmax(0,1fr)}
+.self-report-hero{display:block;padding:20px}
+.self-report-hero .match-person{max-width:360px;margin:16px auto 0}
+.self-profile{margin:16px 0}
+.self-matches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.match-combination{min-width:0;overflow-wrap:anywhere}
+.match-combination h3{margin-bottom:8px}
+.match-combination .combo-title{font-weight:600;color:#f1ddff}
+@media screen and (max-width:760px){.mode-picker{margin-bottom:12px}.self-report-hero{padding:16px 14px}.self-matches{grid-template-columns:minmax(0,1fr)}}
+@media print{.formula-details.self-method-note{display:block!important;background:#fafafa;color:#444;border-color:#ddd}.match-combination .combo-title{color:#222}}
+.save-poster{display:block;width:min(360px,100%);min-height:50px;margin:0 auto 14px;padding:12px 16px}
+.poster-dialog{width:min(600px,calc(100% - 24px));max-height:88vh;max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overscroll-behavior:contain}
+.poster-top{position:sticky;top:0;z-index:2;background:#201a30;border-bottom:1px solid var(--line)}
+.poster-controls{padding:12px 18px 14px}
+.poster-hint{font-size:13px;line-height:1.7;color:#d7c5e6}
+.poster-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}
+.poster-actions .primary,.poster-actions .secondary{display:inline-flex;align-items:center;justify-content:center;width:auto;min-height:44px;padding:8px 13px;font-size:14px;letter-spacing:0;text-decoration:none;line-height:1.5}
+.poster-preview{padding:12px 12px max(12px,env(safe-area-inset-bottom))}
+.poster-preview img{display:block;width:100%;height:auto;border-radius:10px;-webkit-touch-callout:default;touch-action:auto}
+.palette-ribbon{display:none}
+@media screen{
+ body[data-view="report"]{
+  --spectrum:linear-gradient(90deg,var(--a),var(--az),var(--b),var(--bz));
+  --wash:linear-gradient(var(--palette-angle),var(--a-glow),var(--az-glow),var(--b-glow),var(--bz-glow));
+ }
+ [data-view="report"] .sky{
+  background:radial-gradient(ellipse at 12% 18%,var(--a-light),transparent 52%),
+    radial-gradient(ellipse at 79% 14%,var(--az-light),transparent 48%),
+    radial-gradient(ellipse at 90% 71%,var(--b-light),transparent 52%),
+    radial-gradient(ellipse at 20% 88%,var(--bz-light),transparent 52%),var(--wash),#111322;
+ }
+ [data-view="report"] .sky::after{background:var(--az-glow)}
+ [data-view="report"] .brandmark::before{border-color:var(--a)}
+ [data-view="report"] .brandmark::after{border-color:var(--bz)}
+ .result-view .report-hero{
+  border:1px solid transparent;border-radius:24px;
+  background:var(--wash) padding-box,linear-gradient(135deg,#121426,#111322) padding-box,var(--spectrum) border-box;
+ }
+ .palette-ribbon{
+  display:block;width:min(400px,90%);height:4px;margin:16px auto 0;border-radius:99px;
+  background:var(--spectrum);box-shadow:0 0 20px var(--a-light),0 0 25px var(--b-light);
+ }
+ .result-view .match-person,.result-view .self-profile,.result-view .profiles .profile-card:first-child{
+  border-color:var(--az-glow);background:linear-gradient(135deg,var(--a-glow),var(--az-glow)),#171829;
+ }
+ .result-view .match-layout .match-person:last-child,.result-view .profiles .profile-card:nth-child(2){
+  border-color:var(--bz-glow);background:linear-gradient(225deg,var(--b-glow),var(--bz-glow)),#171829;
+ }
+ .result-view .dimension,.result-view .pattern,.result-view .tip,.result-view .match-combination,.result-view .formula-details{
+  background:var(--wash),#161727;
+ }
+ .result-view .blessing{background:var(--wash),#18192b;border-color:var(--bz-glow)}
+ .result-view .section-heading .num,.result-view .action b,.result-view .combo-title{color:var(--az)}
+ .result-view .section-heading::after,.result-view .dim-fill{background:var(--spectrum)}
+ .result-view .score-orbit::before{background:conic-gradient(from var(--palette-angle),var(--a),var(--az),var(--b),var(--bz),var(--a))}
+ .result-view .score-number{background-image:var(--spectrum)}
+ .result-view .save-poster{color:#111322;background:var(--spectrum);box-shadow:0 9px 24px var(--b-glow)}
+ .result-view .save-poster:hover{filter:brightness(1.08)}
+}
+@media screen and (max-width:760px){
+ .result-view .report-hero{border-radius:19px}
+ .report-hero .palette-ribbon{grid-row:7;grid-column:1 / -1;margin:2px auto 0}
+ .self-report-hero .palette-ribbon{margin-top:13px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media print{html,body{background:white!important;color:#222!important;font-size:10pt}.sky,.header,.footer,.report-tools,.result-bottom,.toast,dialog,.formula-details{display:none!important}.shell{max-width:none;padding:0}.result-view{padding:0}.report-hero{padding:0 0 12px}.report-hero h1{color:#222;font-size:24pt}.report-sub,.result-note,.report-meta{color:#555!important}.report-hero .eyebrow{color:#555}.match-layout{grid-template-columns:1fr 170px 1fr}.score-orbit{width:155px;height:155px}.score-number{color:#222;font-size:44pt;background:none}.score-label,.score-note,.match-zodiac,.gender-label{color:#555}.match-person,.dimension,.profile-card,.pattern,.tip,.blessing{background:#fafafa!important;border:1px solid #ddd!important;break-inside:avoid;box-shadow:none}.match-person h2,.color-chips,.profile-label,.dimension-tag,.scene-index,.tip-num{color:#555!important}.section-heading h2,.profile-card h3,.pattern h3,.tip h3,.blessing h2,.dimension h3{color:#222}.dimension p,.profile-card p,.pattern p,.tip p,.blessing p,.scene,.action b{color:#444!important}.section-heading{margin:20px 0 12px}.profiles,.patterns,.dimensions{gap:12px}.tips{grid-template-columns:repeat(3,1fr)}.tip{display:block;padding:16px}.blessing{padding:24px;margin-top:20px}.blessing small,.blessing .star{color:#555}.dim-track{print-color-adjust:exact;-webkit-print-color-adjust:exact}.score-orbit::before{display:none}.dim-value{color:#666}.report-meta{margin-bottom:10px}@page{margin:15mm}}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div class="shell">
+<header class="header">
+ <button type="button" class="brand" id="brandHome" aria-label="双星引力，返回首页"><span class="brandmark" aria-hidden="true"><i></i></span><span><strong>双星引力</strong><small>THE GRAVITY OF US</small></span></button>
+ <div class="header-right">
+  <span class="quota-badge" id="quotaText" role="status" title="首次打开起 12 小时内有效，刷新也算一次打开">正在读取打开次数</span>
+  <button type="button" class="linkbtn" id="openMethod">解读依据 ↗</button>
+ </div>
+</header>
+<main>
+<section class="home" id="homeView" aria-labelledby="homeTitle" hidden>
+ <div class="hero">
+  <div class="intro">
+   <div class="eyebrow">A LITTLE CLOSER, A LITTLE CLEARER</div>
+   <h1 id="homeTitle"><span id="homeTitleLead">你们的相遇，</span><br>会是<span class="gradient-text">什么颜色</span>？</h1>
+   <p class="intro-copy" id="homeIntro">有人像星光，有人像晚风。<br>从性格的偏好，到星座的浪漫想象，<br>一起看看，你们会写出怎样的日常。</p>
+   <div class="small-tags"><span>16 型人格偏好</span><span>12 星座象征</span><span id="homeModeTag">只属于你们的相处指南</span></div>
+   <div class="orbit-art" aria-hidden="true">
+    <svg viewBox="0 0 470 260" fill="none"><defs><radialGradient id="planetA" cx=".3" cy=".22" r=".85"><stop stop-color="#e8c5ff"/><stop offset=".27" stop-color="#b88cdd"/><stop offset=".66" stop-color="#685083"/><stop offset="1" stop-color="#242036"/></radialGradient><radialGradient id="planetB" cx=".3" cy=".2" r=".9"><stop stop-color="#ffe5ca"/><stop offset=".3" stop-color="#eab4c7"/><stop offset=".72" stop-color="#925b85"/><stop offset="1" stop-color="#3a2a4b"/></radialGradient><linearGradient id="orbitStroke" x1="34" y1="160" x2="436" y2="86" gradientUnits="userSpaceOnUse"><stop stop-color="#9c7fc6" stop-opacity=".12"/><stop offset=".45" stop-color="#d1b5e9" stop-opacity=".7"/><stop offset="1" stop-color="#f4c6d5" stop-opacity=".12"/></linearGradient></defs><ellipse cx="232" cy="132" rx="202" ry="61" transform="rotate(-15 232 132)" stroke="url(#orbitStroke)"/><ellipse cx="232" cy="132" rx="166" ry="95" transform="rotate(15 232 132)" stroke="#a583bd" stroke-opacity=".17"/><circle cx="189" cy="122" r="62" fill="url(#planetA)"/><circle cx="299" cy="150" r="38" fill="url(#planetB)"/><path d="M37 169c34 34 139 35 245 6 93-24 154-62 151-85" stroke="url(#orbitStroke)"/><circle cx="91" cy="181" r="3" fill="#cbb2e3"/><circle cx="366" cy="73" r="2" fill="#e0c5e5"/><path d="M351 176v12m-6-6h12M107 73v8m-4-4h8" stroke="#d6bae7" stroke-opacity=".7"/><path d="M237 61v13m-6.5-6.5h13" stroke="#eacdf3" stroke-opacity=".8"/><circle cx="327" cy="211" r="1" fill="#eee0ff"/><circle cx="137" cy="41" r="1" fill="#eee0ff"/></svg>
+    <span class="orbit-note">TWO WORLDS. ONE LITTLE UNIVERSE.</span>
+   </div>
+   <div class="intro-bottom"><b>✧</b><span>每一种相遇，都值得被认真理解。<br>每一段关系，都有自己生长的方式。</span></div>
+  </div>
+  <form id="affinityForm" class="entry-panel">
+   <div class="mode-picker" role="group" aria-label="选择解读模式">
+    <button type="button" id="chooseSelf" aria-pressed="false">测自己</button>
+    <button type="button" id="choosePair" aria-pressed="true">测我们</button>
+   </div>
+   <div class="panel-top"><h2 id="panelTitle">写下你们的星球坐标</h2><span id="panelKicker">01 / MEET EACH OTHER</span></div>
+   <div class="people-grid" id="peopleGrid" data-mode="pair">
+    <section class="person" aria-labelledby="personAHeading"><div class="person-heading"><span class="avatar" aria-hidden="true">✧</span><div><h3 id="personAHeading">你的信息</h3><small>YOUR UNIVERSE</small></div></div>
+     <label class="field" for="aMbti"><span class="field-label">MBTI 人格<i>PERSONALITY</i></span><span class="select-wrap"><select id="aMbti" name="aMbti" required><option value="" disabled selected>选择 MBTI</option></select></span></label>
+     <label class="field" for="aZodiac"><span class="field-label">太阳星座<i>ZODIAC</i></span><span class="select-wrap"><select id="aZodiac" name="aZodiac" required><option value="" disabled selected>选择星座</option></select></span></label>
+     <label class="field" for="aGender"><span class="field-label">性别<i>GENDER</i></span><span class="select-wrap"><select id="aGender" name="aGender" required><option value="" disabled selected>选择性别</option><option value="male">男</option><option value="female">女</option></select></span></label>
+    </section>
+    <section class="person person-b" id="personB" aria-labelledby="personBHeading"><div class="person-heading"><span class="avatar" aria-hidden="true">✦</span><div><h3 id="personBHeading">对方的信息</h3><small>THEIR UNIVERSE</small></div></div>
+     <label class="field" for="bMbti"><span class="field-label">MBTI 人格<i>PERSONALITY</i></span><span class="select-wrap"><select id="bMbti" name="bMbti" required><option value="" disabled selected>选择 MBTI</option></select></span></label>
+     <label class="field" for="bZodiac"><span class="field-label">太阳星座<i>ZODIAC</i></span><span class="select-wrap"><select id="bZodiac" name="bZodiac" required><option value="" disabled selected>选择星座</option></select></span></label>
+     <label class="field" for="bGender"><span class="field-label">性别<i>GENDER</i></span><span class="select-wrap"><select id="bGender" name="bGender" required><option value="" disabled selected>选择性别</option><option value="male">男</option><option value="female">女</option></select></span></label>
+    </section>
+   </div>
+   <div id="formError" class="form-error" role="alert" hidden></div>
+   <button type="submit" class="primary submit" id="submitBtn" disabled>探索我们的引力<span aria-hidden="true">↗</span></button>
+  </form>
+ </div>
+ <p class="footnote"><strong>给浪漫一点想象，也给彼此一点真实。</strong><br>MBTI 描述偏好，不能完整定义一个人；星座与缘分评分属于娱乐性解读，无法准确预测关系。<br>页面中的“幸运色”是本站设计的象征配色，非官方标准。真实的契合，来自理解、尊重与行动。</p>
+</section>
+<section class="result-view" id="resultView" aria-labelledby="reportTitle" hidden>
+ <div class="report-tools"><button type="button" class="textbtn" id="backHome">← 返回填写</button><div class="tool-group"><button type="button" class="textbtn" id="saveText">保存文字报告 ↓</button><button type="button" class="textbtn" id="printReport">打印 / 存为 PDF ↗</button></div></div>
+ <article id="reportArticle"></article>
+ <div class="result-bottom">
+  <button type="button" class="primary save-poster" id="savePoster">保存长图 ↓</button>
+  <button type="button" class="secondary" id="tryAgain">带着新的理解，再探索一次 ↗</button>
+ </div>
+</section>
+<section class="expiry-panel" id="expiryView" aria-labelledby="expiryTitle" hidden>
+ <h1 id="expiryTitle">链接已失效</h1>
+ <p id="expiryMessage">首次打开后的 12 小时有效期已结束。</p>
+</section>
+</main>
+<footer class="footer"><span>双星引力 © 2026 · 让理解，比标签更靠近</span><span>May your little universe always have light.</span></footer>
+</div>
+<dialog id="methodDialog" aria-labelledby="methodTitle">
+ <div class="modal-head"><h2 id="methodTitle">关于这份相处解读</h2><button type="button" class="close" id="closeMethod" aria-label="关闭解读依据">×</button></div>
+ <div class="modal-content">
+  <h3>MBTI：准确理解四组偏好</h3>
+  <p>E / I 关注注意力与精力的方向；S / N 关注如何获取信息；T / F 关注决策时更看重逻辑一致性，还是价值与人的处境；J / P 关注面对外部生活时更偏好确定安排，还是保持开放。每个人都能运用两侧偏好，类型不是能力等级，也不是完整人格。</p>
+  <p>本页根据你输入的类型生成偏好解读，不提供官方 MBTI 测评，不会根据星座或性别反推人格。没有哪一种类型组合能保证关系成功。</p>
+  <h3>星座：作为象征故事来阅读</h3>
+  <p>采用西方热带黄道太阳星座的常见象征及四元素分类。火象为白羊、狮子、射手；土象为金牛、处女、摩羯；风象为双子、天秤、水瓶；水象为巨蟹、天蝎、双鱼。仅凭太阳星座不能推断完整星盘，星座也没有被可靠验证能预测性格或缘分。页面的星座内容是供交流的想象线索，请用真实经历检验。</p>
+  <h3>单人推荐如何产生</h3>
+  <p>每条推荐把一个 MBTI 类型和一个太阳星座放进同一个相处场景。MBTI 偏好提供沟通线索，星座意象提供聊天灵感。性别仅显示在个人资料中。</p>
+  <h3>双人分数如何产生</h3>
+  <p id="methodFormula"></p>
+  <p>这是本站自定义的娱乐性契合指数，并非心理测量、关系成功率、统计概率或科学排名。相似偏好被赋予较高“初始协调”分，只表示本页规则的设定；差异不表示不适合，同型也不表示更幸福。相同输入始终获得相同分数。性别不参与分数加减或性格判断。</p>
+  <h3>幸运色：一份可核对的设计约定</h3>
+  <p>MBTI 和星座均没有统一、经验证的幸运色标准。以下颜色由本站为视觉主题设计。结果页会采用填写资料对应的 MBTI 色与星座色。</p>
+  <p class="legend-caption">16 型人格 · 象征幸运色</p><div class="palette-list" id="mbtiLegend"></div>
+  <p class="legend-caption">12 星座 · 象征幸运色</p><div class="palette-list" id="zodiacLegend"></div>
+  <h3>次数与本地信息</h3>
+  <p>同一链接在当前浏览器首次打开起有效 12 小时，最多打开 3 次。刷新也算一次打开。在已打开的页面中，测自己、测我们、返回填写和保存报告都不扣次数。</p>
+  <h3>资料来源</h3>
+  <p class="source"><a href="https://www.myersbriggs.org/my-mbti-personality-type/myers-briggs-overview/" target="_blank" rel="noopener noreferrer">Myers &amp; Briggs Foundation · MBTI 框架与偏好</a></p>
+  <p class="source"><a href="https://www.myersbriggs.org/my-mbti-personality-type/the-mbti-preferences/" target="_blank" rel="noopener noreferrer">Myers &amp; Briggs Foundation · 四组偏好的含义</a></p>
+  <p class="source"><a href="https://www.myersbriggs.org/type-in-my-life/personality-type-and-relationships/" target="_blank" rel="noopener noreferrer">Myers &amp; Briggs Foundation · 类型与关系</a></p>
+  <p class="source"><a href="https://www.themyersbriggs.com/en-US/Support/MBTI-Facts" target="_blank" rel="noopener noreferrer">The Myers-Briggs Company · MBTI 事实与适用范围</a></p>
+  <p class="source"><a href="https://www.nature.com/articles/318419a0" target="_blank" rel="noopener noreferrer">Carlson, Nature (1985) · 占星的双盲检验</a></p>
+  <p style="margin-top:20px;font-size:10px">资料核对日期：2026 年 11 月 5 日。MBTI® 为相关权利人的商标；本页为独立制作。</p>
+ </div>
+</dialog>
+<dialog id="posterDialog" class="poster-dialog" aria-labelledby="posterTitle">
+ <div class="poster-top">
+  <div class="modal-head">
+   <h2 id="posterTitle">完整报告长图</h2>
+   <button type="button" class="close" id="closePoster" aria-label="关闭长图预览">×</button>
+  </div>
+  <div class="poster-controls">
+   <p class="poster-hint" id="posterHint" role="status"></p>
+   <div class="poster-actions" id="posterActions" hidden>
+    <button type="button" class="primary" id="sharePoster" hidden>分享或保存图片</button>
+    <a class="secondary" id="downloadPoster" download>下载 PNG</a>
+   </div>
+  </div>
+ </div>
+ <div class="poster-preview" id="posterPreview" hidden>
+  <img id="posterImage" alt="完整解读报告长图">
+ </div>
+</dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<noscript><p style="padding:30px;text-align:center">请启用 JavaScript，以便记录打开次数并生成报告。</p></noscript>
+<script>
+/* 双星引力 · 离线解读规则 v1.4
+ * Preference definitions checked against The Myers-Briggs Company, MBTI Facts;
+ * relationship boundary checked against Myers & Briggs Foundation, Relationships.
+ * Zodiac elements follow the Western tropical zodiac tradition, not astronomy.
+ * Text, scenario rules, numeric scale and all color mappings are original site design.
+ * No random score, gender weighting, soulmate prediction or empirical probability.
+ */
+(function (root) {
+  'use strict';
+
+  const mbti = {
+    ISTJ: {name:'务实规划型',color:'#82B7E8',colorName:'雾海蓝',summary:'偏好先核对具体事实，再按照清楚的安排推进。',strength:'把承诺拆成可完成的小事',need:'明确约定和可预期的节奏',stress:'临时变动很多、责任边界不清时，可能更想确认细节',advice:'解释计划为什么重要，也给对方留一个可调整的选项。'},
+    ISFJ: {name:'细心照顾型',color:'#85CEBE',colorName:'薄荷青',summary:'常从熟悉的细节和人的需要出发，重视稳定的互动。',strength:'记住日常需要并持续照应',need:'付出被看见，约定能落实',stress:'需求长期被忽略时，可能继续照顾别人却少说自己的委屈',advice:'把“我也需要你做什么”说清楚，让照顾成为双向的事。'},
+    INFJ: {name:'意义连接型',color:'#B1A0F4',colorName:'鸢尾紫',summary:'偏好把信息连成有意义的图景，并考虑决定对人的影响。',strength:'围绕共同价值展开深入交流',need:'真诚回应和安静整理思绪的空间',stress:'长期只谈琐事、难以讨论重要感受时，可能觉得连接不足',advice:'把期待变成一个具体请求，不要求对方读懂所有暗示。'},
+    INTJ: {name:'远景规划型',color:'#9A9DF5',colorName:'星云靛',summary:'倾向先看整体结构与长期方向，再寻找有逻辑的推进方式。',strength:'给共同目标搭建清晰路径',need:'自主空间和有依据的讨论',stress:'目标频繁改变又缺少解释时，可能把注意力集中在纠正方案',advice:'提出优化办法之前，先确认对方此刻需要理解还是建议。'},
+    ISTP: {name:'灵活实践型',color:'#66C8D0',colorName:'冰川青',summary:'偏好从眼前事实和实际操作中理解问题，安排上较愿意保留余地。',strength:'在具体难题出现时寻找可用办法',need:'行动自由和简洁清楚的沟通',stress:'被要求立即解释每个感受或接受过密安排时，可能想先退开',advice:'需要空间时说出回来的时间，也用一句话表达在意。'},
+    ISFP: {name:'当下感受型',color:'#C6A0D7',colorName:'暮光兰',summary:'倾向关注具体体验、个人价值与相处感受，喜欢保有自己的步调。',strength:'在细微体验中表达体贴',need:'边界被尊重、感受能被认真听见',stress:'在公开场合被催促或被强加选择时，可能不愿继续表达',advice:'允许自己温和而明确地说不，把偏好从心里说出来。'},
+    INFP: {name:'价值探索型',color:'#E6A6CA',colorName:'玫瑰雾',summary:'偏好探索可能性，同时关心选择是否符合自己重视的价值。',strength:'为关系保留理解与想象空间',need:'真实表达的安全感和价值上的尊重',stress:'重要信念被轻描淡写地否定时，可能反复在心里消化',advice:'先描述真实发生的事，再解释它触动了什么需要。'},
+    INTP: {name:'原理探索型',color:'#92ACEA',colorName:'月影蓝',summary:'喜欢梳理概念与逻辑，也常愿意保留进一步探索的可能。',strength:'一起拆解问题、提出新角度',need:'思考时间和不被急着定论的空间',stress:'讨论只允许一个答案或必须即刻表态时，可能变得更简短',advice:'解释推理时补充你的关心，别让对方只能从论证里猜感情。'},
+    ESTP: {name:'行动体验型',color:'#FFA878',colorName:'日落橙',summary:'偏好通过互动与实际尝试获取信息，通常愿意随现场情况调整。',strength:'把犹豫变成一次可尝试的行动',need:'参与感、直接反馈和适度变化',stress:'安排过于僵硬或讨论迟迟没有行动时，可能想马上改变现场',advice:'即兴决定涉及两个人时，先问一句“你也愿意吗”。'},
+    ESFP: {name:'热情体验型',color:'#F4B67E',colorName:'杏子金',summary:'倾向在当下互动与具体体验中连接他人，重视相处的温度。',strength:'让平凡日常拥有共享的快乐',need:'被回应的热情和一起参与的时刻',stress:'长期缺少互动回应时，可能担心彼此正在疏远',advice:'表达想见面的愿望，也允许安静陪伴成为一种回应。'},
+    ENFP: {name:'灵感连接型',color:'#F5C86E',colorName:'向日金',summary:'喜欢在人与新可能之间建立联系，做选择时关心意义和感受。',strength:'为共同生活打开新的可能',need:'好奇心被接住，重要心意被回应',stress:'想法反复被立即否定或生活长期没有余地时，可能失去兴致',advice:'新计划先选一个兑现，让灵感也能成为稳定的小承诺。'},
+    ENTP: {name:'创意辩证型',color:'#C3A0F6',colorName:'电光紫',summary:'倾向通过讨论探索可能性，并用逻辑检验新想法。',strength:'换一个角度看难题',need:'可以提问的空间和有趣的交流',stress:'问题尚未讨论就被禁止改变时，可能继续挑战既定结论',advice:'确认对方是否愿意辩论，认真感受不必在每次交谈中被论证。'},
+    ESTJ: {name:'清晰执行型',color:'#75C4C2',colorName:'深潮绿',summary:'偏好以事实和规则为依据，把共同事务安排得清楚可执行。',strength:'分清责任并让计划落地',need:'清楚的分工和可靠的回应',stress:'约定长期不落实时，可能更频繁地检查进度',advice:'讨论分工时邀请对方一起定规则，并说明你希望怎样被支持。'},
+    ESFJ: {name:'协作关怀型',color:'#F1A3AA',colorName:'珊瑚粉',summary:'重视具体的人际需要，倾向用清楚的安排支持共同生活。',strength:'把照顾和共同仪式落实到日常',need:'互相回应的关心与明确的关系投入',stress:'照顾被视为理所当然时，可能更在意对方是否有回应',advice:'直接询问对方喜欢怎样被照顾，也表达你自己的需要。'},
+    ENFJ: {name:'共情组织型',color:'#E8A1B8',colorName:'蔷薇红',summary:'倾向看见人的发展可能，并通过沟通与安排推动共同目标。',strength:'把彼此关心的事连接成共同方向',need:'有回应的交流和双方自愿的投入',stress:'一边承担很多沟通、一边得不到清楚反馈时，可能急于替人决定',advice:'支持之前先询问意愿，把对方自己的选择也算进好结果。'},
+    ENTJ: {name:'目标统筹型',color:'#E6B371',colorName:'琥珀金',summary:'偏好围绕整体目标和逻辑结构组织行动，愿意明确方向。',strength:'为复杂的共同事务建立推进方式',need:'坦诚讨论、行动自主和清楚的目标',stress:'长期看不到进展时，可能加快决策而忽略确认彼此感受',advice:'把“我们要完成什么”和“我们现在感觉怎样”都放进讨论。'}
+  };
+
+  // 星座文案是传统意象，不能据此确认真实人格；配色完全是本站设计。
+  const zodiac = {
+    aries:{name:'白羊座',symbol:'♈',element:'火',color:'#FF7D8C',colorName:'焰火红',summary:'白羊的传统意象是主动开始、直接表达。',need:'行动上的回应与被尊重的自主',advice:'想推进一件事时，先确认双方都准备好了。'},
+    taurus:{name:'金牛座',symbol:'♉',element:'土',color:'#85CBA5',colorName:'翡翠绿',summary:'金牛的传统意象是稳定积累、珍惜舒适体验。',need:'可持续的安排与切实的陪伴',advice:'保留熟悉的仪式，也一起尝试一个小变化。'},
+    gemini:{name:'双子座',symbol:'♊',element:'风',color:'#F7D578',colorName:'柠檬金',summary:'双子的传统意象是好奇交流、切换不同视角。',need:'能持续交流的空间与新鲜感',advice:'聊过的新想法，选一件确认是否真的要一起做。'},
+    cancer:{name:'巨蟹座',symbol:'♋',element:'水',color:'#B9D7F1',colorName:'月光银蓝',summary:'巨蟹的传统意象是归属、照顾与情绪记忆。',need:'能明确感受到的在意和稳定联系',advice:'需要被陪伴时直接说，不把沉默当成对方应懂的信号。'},
+    leo:{name:'狮子座',symbol:'♌',element:'火',color:'#FFC27D',colorName:'暖阳金',summary:'狮子的传统意象是热情表达、共享喜悦。',need:'真诚欣赏与被尊重的表达空间',advice:'肯定彼此的努力，把注意力也留给安静的贡献。'},
+    virgo:{name:'处女座',symbol:'♍',element:'土',color:'#B6D7A5',colorName:'鼠尾草绿',summary:'处女的传统意象是细致改进、照顾实际需要。',need:'有秩序的日常和认真落实的回应',advice:'提出修改意见前，先说清自己已经看见的好。'},
+    libra:{name:'天秤座',symbol:'♎',element:'风',color:'#F1B7D3',colorName:'樱花粉',summary:'天秤的传统意象是协调关系、看见不同立场。',need:'能互相商量的关系和公平参与',advice:'体谅对方时，也说出自己的真实偏好。'},
+    scorpio:{name:'天蝎座',symbol:'♏',element:'水',color:'#CB8FB8',colorName:'莓果紫',summary:'天蝎的传统意象是深入连接、重视信任。',need:'坦诚一致的回应和被尊重的边界',advice:'用直接的询问建立信任，少用试探来确认在意。'},
+    sagittarius:{name:'射手座',symbol:'♐',element:'火',color:'#B29EF4',colorName:'远山紫',summary:'射手的传统意象是探索远方、寻找成长空间。',need:'可以共同探索的可能与自主余地',advice:'出发前把时间、预算和彼此的边界商量好。'},
+    capricorn:{name:'摩羯座',symbol:'♑',element:'土',color:'#AAB6CC',colorName:'岩雾蓝灰',summary:'摩羯的传统意象是长期建设、重视承担。',need:'有持续行动的承诺与明确分工',advice:'讨论未来进展时，也为此刻的陪伴留时间。'},
+    aquarius:{name:'水瓶座',symbol:'♒',element:'风',color:'#75D6E6',colorName:'极光蓝',summary:'水瓶的传统意象是独立思考、尝试新视角。',need:'观点被尊重、个人空间可保留',advice:'独立并不妨碍亲近，告诉对方你喜欢怎样保持联系。'},
+    pisces:{name:'双鱼座',symbol:'♓',element:'水',color:'#B9A4ED',colorName:'梦境薰衣草',summary:'双鱼的传统意象是想象、共情与柔和连接。',need:'能安心表达的氛围与温柔清楚的边界',advice:'把理想的相处感受，转成一个可以实行的小请求。'}
+  };
+
+  const method = {
+    version:'1.4 · 2026-11-10',
+    summary:'用 MBTI 的四组偏好和西方太阳星座的传统意象，一起构思相处情境。请用真实经历核对偏好，按自己是否有共鸣选用意象。',
+    scoreName:'缘分契合度 · 娱乐参考',
+    scoreMeaning:'分数是本站自定义的互动风格参考值。相似表达获得较高的熟悉度分，差异获得探索分；分数没有经过关系研究验证，不是相爱概率、关系质量或成功率。没有最佳或注定更成功的MBTI组合。',
+    formula:'总分＝四舍五入（信息理解×30%＋回应关怀×30%＋日常节奏×25%＋星座意象×15%）。信息理解：S/N相同88、不同73；回应关怀：T/F相同86、不同75；日常节奏：68＋E/I相同加11＋J/P相同加11；星座意象：同元素84，火与风或土与水82，其他70。此数值规则仅为本站娱乐设计，不是研究结论。',
+    colorNote:'页面中的“幸运色”是本站为16种MBTI和12星座设计的象征配色，没有统一权威标准，也不表示颜色会带来实际好运。',
+    genderNote:'本站按所选性别提供内容主题：男男、女女显示友情解读；男女、女男显示爱情解读。这只是本页面的内容分流规则，不推断真实关系、性取向或男女角色。性别不参与分数计算，也不决定任何人的性格。',
+    sources:[
+      {title:'The Myers-Briggs Company · MBTI Facts（四组偏好）',url:'https://www.themyersbriggs.com/en-US/Support/MBTI-Facts',note:'用于核对E/I、S/N、T/F、J/P的含义；偏好不等于能力，也不能完整描述一个人。'},
+      {title:'Myers & Briggs Foundation · Personality Type and Relationships',url:'https://www.myersbriggs.org/type-in-my-life/personality-type-and-relationships/home.htm',note:'明确不存在最佳或更成功的类型配对；本页面的分数与情境是原创娱乐规则。'},
+      {title:'Astrology.com · Elements（传统分类）',url:'https://www.astrology.com/elements',note:'用于核对西方占星的四元素传统，不作为星座可以预测性格或缘分的证据。'},
+      {title:'The Planetary Society · Astronomy and Astrology',url:'https://www.planetary.org/articles/what-is-the-difference-between-astronomy-and-astrology',note:'用于说明天文学与占星的区别，占星缺少实证支持。'}
+    ]
+  };
+
+  const genderValues = new Set(['female','male']);
+  function validate(person, index) {
+    if (!person || typeof person !== 'object' ||
+        typeof person.mbti !== 'string' || !Object.prototype.hasOwnProperty.call(mbti, person.mbti) ||
+        typeof person.zodiac !== 'string' || !Object.prototype.hasOwnProperty.call(zodiac, person.zodiac) ||
+        !genderValues.has(person.gender)) {
+      throw new TypeError(index
+        ? '请完整选择第' + index + '个人的MBTI、星座和性别。'
+        : '请完整选择自己的MBTI、星座和性别。');
+    }
+    return {mbti: person.mbti, zodiac: person.zodiac, gender: person.gender, label: index === 2 ? '对方' : '你'};
+  }
+  const signLens = {
+    aries: {image: '主动试一次', situation: '想试新活动', contact: '提个真想去的活动', plan: '选个能先试一次的项目', care: '直说最想改哪一点'},
+    taurus: {image: '稳定与舒适', situation: '安排周末', contact: '约个都方便的时段', plan: '保留一项都喜欢的熟悉安排', care: '商量一个做得到的约定'},
+    gemini: {image: '好奇与交流', situation: '有了新发现', contact: '用一个问题开场', plan: '从新点子里挑一件试试', care: '换个说法确认彼此理解一致'},
+    cancer: {image: '照顾与归属', situation: '想和对方一起放松', contact: '问对方想聊聊还是安静陪伴', plan: '留一段安心相处的时间', care: '问对方现在需要什么照顾'},
+    leo: {image: '分享喜悦', situation: '想庆祝对方的小成就', contact: '说句具体的恭喜', plan: '选个都自在的庆祝方式', care: '说出欣赏对方的一个地方'},
+    virgo: {image: '照料细节', situation: '一起准备一件小事', contact: '问对方哪件小事需要帮忙', plan: '约定各自负责的一个步骤', care: '把抱怨换成一处能改的细节'},
+    libra: {image: '听见两边的偏好', situation: '两人想去不同的地方', contact: '给出两个见面选项', plan: '各提一个选项再一起选', care: '复述对方的看法，再说自己的偏好'},
+    scorpio: {image: '信任与深聊', situation: '想谈件私事', contact: '问对方是否方便私下聊', plan: '选个能坦诚交流的场合', care: '确认哪些想分享、哪些想保留'},
+    sagittarius: {image: '留空间探索', situation: '筹划一次短途出行', contact: '分享一个想探索的地方', plan: '在路线里留段自由探索时间', care: '说清愿意尝试和暂时不愿做的事'},
+    capricorn: {image: '兑现承诺', situation: '要一起完成一件事', contact: '约个做得到的小行动', plan: '说清分工和确认时间', care: '挑一件下次能做到的改变'},
+    aquarius: {image: '独立与新视角', situation: '想试一种合作方式', contact: '提出新想法，留一点回应时间', plan: '给彼此留发挥空间', care: '承认意见不同，再找一件可一起做的事'},
+    pisces: {image: '想象与体谅', situation: '想让见面轻松一点', contact: '问对方今天最想聊什么', plan: '留一项都能放松的活动', care: '说清最希望被理解的一种感受'}
+  };
+
+  function imagery(key) {
+    return zodiac[key].name + '的“' + signLens[key].image + '”';
+  }
+
+  function profile(person) {
+    const type = mbti[person.mbti];
+    const sign = zodiac[person.zodiac];
+    const lens = signLens[person.zodiac];
+    const lead = person.mbti[1] === 'S' ? '先核对条件，再' : '先聊想体验什么，再';
+    return {
+      label: person.label,
+      headline: person.mbti + ' · ' + type.name + ' × ' + sign.name,
+      paragraphs: [
+        lens.situation + '时，可借' + imagery(person.zodiac) + '作灵感，顺着 ' + person.mbti
+          + ' 的偏好' + lead + lens.plan + '。相处时可能擅长' + type.strength
+          + '，也可以说清自己在意的“' + type.need + '”。'
+      ]
+    };
+  }
+
+  function personalAction(person, scene) {
+    const lens = signLens[person.zodiac];
+    const [energy, information, decision] = person.mbti;
+    if (scene === 'contact') {
+      return person.label + '可以'
+        + (energy === 'E' ? '边聊边' : '想清楚再') + lens.contact + '。';
+    }
+    if (scene === 'plan') {
+      return person.label + '可以'
+        + (information === 'S' ? '先看时间和预算，再' : '先说期待，再') + lens.plan + '。';
+    }
+    return person.label + '可以'
+      + (decision === 'T' ? '先讲清依据，再' : '先听感受，再') + lens.care + '。';
+  }
+
+  function pairedActions(a, b, scene) {
+    const left = signLens[a.zodiac][scene];
+    const right = signLens[b.zodiac][scene];
+    return left === right ? left : left + '，或' + right;
+  }
+
+  function dailyPatterns(a, b, friendship, {sameEI, sameSN, sameTF, sameJP}) {
+    const who = (position, letter) => a.mbti[position] === letter ? '你' : '对方';
+    const bothI = a.mbti[0] === 'I';
+    const bothS = a.mbti[1] === 'S';
+    const bothT = a.mbti[2] === 'T';
+    const bothJ = a.mbti[3] === 'J';
+    const contactLine = friendship
+      ? '今晚吃饭方便吗？忙的话，我们周末再约。'
+      : '我今晚想先休息，明晚打个电话可以吗？';
+    const planLine = sameJP && bothJ
+      ? (friendship ? '周五前定集合时间，下雨就改逛室内市集？' : '周五前定看展时间，没票就去那家店吃饭？')
+      : sameJP
+        ? (friendship ? '先约下午两点集合，想逛哪儿当天再选？' : '先约下午两点见，去哪儿吃饭留到当天再定？')
+        : (friendship ? '先定集合时间，市集和郊外都先留着，周五晚再选？' : '先定见面时间，看展和吃饭都先留着，周五晚再选？');
+    const careLine = friendship
+      ? '你想让我先听听，还是陪你想想下次怎么办？'
+      : '时间改了，我有点失落。下次能早点告诉我吗？';
+    const contact = {
+      title: friendship ? '怎么联系' : '见面与独处',
+      scene: (friendship ? '周五快下班时，群里问要不要一起吃饭。' : '下班路上，一方发消息问今晚要不要见面。') + (sameEI
+        ? (bothI
+          ? '两人可能都想先歇一会儿，消息隔了一阵才接上。'
+          : '两人可能都有话想聊，一开口就忘了问对方累不累。')
+        : who(0, 'E') + '可能想见面聊聊，' + who(0, 'I') + '可能想独处一会儿再答。'),
+      why: sameEI
+        ? (bothI ? '都需要留时间整理想法。' : '都可能喜欢边聊边整理想法。')
+        : '补充精力的方式可能不同。',
+      action: personalAction(a, 'contact') + personalAction(b, 'contact')
+        + '说清何时方便，允许婉拒。可以说“' + contactLine + '”'
+    };
+    const plan = {
+      title: friendship ? '一起出游' : '安排约会',
+      scene: (friendship ? '周末出游，可以逛市集，也可以去郊外。' : '周末见面，可以看展，也可以去常去的店吃饭。')
+        + (sameSN
+          ? (bothS ? '你们可能都先查开放时间和费用。' : '你们可能都先聊想体验什么。')
+          : who(1, 'S') + '可能先问往返多久，' + who(1, 'N') + '可能先聊想体验什么。'),
+      why: sameJP
+        ? (bothJ ? '都可能倾向早定，也可以留个备选。' : '都愿留选择，预约仍要确认。')
+        : who(3, 'J') + '可能想早定，' + who(3, 'P') + '可能想临时再选。',
+      action: personalAction(a, 'plan') + personalAction(b, 'plan')
+        + '可以这样商量“' + planLine + '”'
+    };
+    const care = {
+      title: friendship ? '听朋友倾诉' : '意见不同时',
+      scene: (friendship ? '朋友发消息说，今天会上提的方案被否了。' : '好不容易空出一晚，原定的见面时间却临时改了。') + (sameTF
+        ? (bothT ? '两人可能很快找起原因和办法。' : '两人可能先顾感受，没说出分歧。')
+        : who(2, 'T') + '可能先找原因，' + who(2, 'F') + '可能先问感受。'),
+      why: sameTF
+        ? (bothT ? '分析前也可以先听完。' : '可以体谅，也可以说出分歧。')
+        : '逻辑依据和对人的影响都值得听。',
+      action: personalAction(a, 'care') + personalAction(b, 'care')
+        + (friendship ? '对方只想倾诉时，先陪着听完。' : '最后选个都愿试的小改变。')
+        + '可以从这句开始“' + careLine + '”'
+    };
+    return [contact, plan, care];
+  }
+
+  function shortTips(a, b, friendship) {
+    const planStyle = a.mbti[3] !== b.mbti[3]
+      ? '各说一项要先定的事，再留一个备选。'
+      : (a.mbti[3] === 'J' ? '一起定好时间和改期办法。' : '保留选项，给重要的事定个确认时间。');
+    return [
+      {title: '试一件小事', text: signLens[a.zodiac].situation + '时，各提一件想做的事。' + planStyle},
+      friendship
+        ? {title: '照顾朋友的边界', text: '倾诉、借物前问一句是否方便。不方便就换个时间。'}
+        : {title: '亲近前先问', text: '约会或亲密接触前先问意愿，双方都可以改变主意。'},
+      friendship
+        ? {title: '为小进展喝彩', text: '问朋友想怎样庆祝，或者说一句具体的恭喜。'}
+        : {title: '约个时间再谈', text: '想冷静就说好何时继续。回来只谈一件事及它的影响。'}
+    ];
+  }
+
+  function analyze(first, second) {
+    const a = validate(first, 1);
+    const b = validate(second, 2);
+    const az = zodiac[a.zodiac];
+    const bz = zodiac[b.zodiac];
+    const friendship = a.gender === b.gender;
+    const relationship = friendship ? 'friendship' : 'romance';
+    const relationshipLabel = friendship ? '友情' : '爱情';
+    const scoreLabel = relationshipLabel + '契合度';
+    const sceneHeading = friendship ? '作为朋友，你们会怎样相处' : '如果相爱，会怎样过日常';
+    const tipsHeading = friendship ? '让友情更自在的相处建议' : '让爱情更稳妥的相处建议';
+    const blessingHeading = friendship ? '送给这份友情的祝福' : '送给你们的爱情祝福';
+
+    const sameEI = a.mbti[0] === b.mbti[0];
+    const sameSN = a.mbti[1] === b.mbti[1];
+    const sameTF = a.mbti[2] === b.mbti[2];
+    const sameJP = a.mbti[3] === b.mbti[3];
+    const sameElement = az.element === bz.element;
+    const complementaryElement = (
+      [az.element, bz.element].includes('火') && [az.element, bz.element].includes('风')
+    ) || (
+      [az.element, bz.element].includes('土') && [az.element, bz.element].includes('水')
+    );
+    const info = sameSN ? 88 : 73;
+    const care = sameTF ? 86 : 75;
+    const rhythm = 68 + (sameEI ? 11 : 0) + (sameJP ? 11 : 0);
+    const symbol = sameElement ? 84 : (complementaryElement ? 82 : 70);
+    const score = Math.round(info * .30 + care * .30 + rhythm * .25 + symbol * .15);
+    const shared = [sameEI, sameSN, sameTF, sameJP].filter(Boolean).length;
+    const differences = 4 - shared;
+    const titles = friendship
+      ? ['在熟悉的频道里，做彼此的好朋友', '有一点不同，也有值得珍惜的友情', '带着不同的视角，一起拓宽生活', '不必完全一样，也能成为舒服的朋友']
+      : ['在熟悉的节奏里，把喜欢过成日常', '一点不同，让爱情更有层次', '带着不同的视角，经营共同的日常', '让不同的两个人，慢慢找到相爱的语言'];
+    const title = titles[Math.min(differences, 3)];
+    const images = a.zodiac === b.zodiac ? imagery(a.zodiac) : imagery(a.zodiac) + '和' + imagery(b.zodiac);
+    const intro = '你们有 ' + shared + ' 组 MBTI 偏好相同，' + differences + ' 组不同。'
+      + '借' + images + (friendship ? '找几个朋友相处的点子。' : '找几个约会和相处的点子。');
+
+    const dimensions = [
+      {
+        name: '信息理解', score: info, tag: sameSN ? '偏好相近' : '视角互补',
+        text: '想' + pairedActions(a, b, 'plan') + '时，' + (sameSN
+          ? (a.mbti[1] === 'S' ? '先聊具体经验，再提新点子。' : '先交换点子，再查实际条件。')
+          : '把实际条件和想试的玩法放在一起。')
+      },
+      {
+        name: '回应关怀', score: care, tag: sameTF ? '表达熟悉' : '需要翻译',
+        text: '分歧时可' + pairedActions(a, b, 'care') + '。' + (sameTF
+          ? (a.mbti[2] === 'T' ? '聊过依据，也问会怎样影响彼此。' : '聊过感受，再确认做法可不可行。')
+          : '各说一个依据和一个在意的影响。')
+      },
+      {
+        name: '日常节奏', score: rhythm, tag: sameEI && sameJP ? '容易对拍' : '协商步调',
+        text: '想' + pairedActions(a, b, 'contact') + '时，' + (sameEI
+          ? (a.mbti[0] === 'I' ? '各自想清，' : '边聊边理清，')
+          : '先确认谁想聊、谁想晚些答，')
+          + (sameJP
+            ? (a.mbti[3] === 'J' ? '再定时间和改期办法。' : '再定预约确认时间。')
+            : '再定要紧的事，其他留到当天。')
+      },
+      {
+        name: '星座意象', score: symbol, tag: '传统象征',
+        text: sameElement
+          ? '传统上同属' + az.element + '象，可从共同话题聊起。'
+          : az.element + '与' + bz.element + '的传统意象可作为聊天起点。'
+      }
+    ];
+    const patterns = dailyPatterns(a, b, friendship, {sameEI, sameSN, sameTF, sameJP});
+    const tips = shortTips(a, b, friendship);
+    const blessing = friendship
+      ? (sameElement ? '愿你们久别仍能自在聊天，为彼此的小事喝彩。' : '愿你们各有好风景，相见时总能分享。')
+      : (sameElement ? '愿你们熟悉如初，也常有新话想说。' : '愿你们自在靠近，也安心说出需要。');
+    return {
+      relationship, relationshipLabel, scoreLabel, sceneHeading, tipsHeading, blessingHeading,
+      score, title, intro, dimensions, profiles: [profile(a), profile(b)], patterns, tips, blessing,
+      palettes: [
+        {mbtiColor: mbti[a.mbti].color, zodiacColor: az.color},
+        {mbtiColor: mbti[b.mbti].color, zodiacColor: bz.color}
+      ],
+      formula: method.formula
+    };
+  }
+
+  const selfPreferences = {
+    E: {
+      name: '精力方向 · E',
+      text: lens => '可以' + lens.contact + '，边聊边理清想法。'
+    },
+    I: {
+      name: '精力方向 · I',
+      text: lens => '先想清想说的一件事，再' + lens.contact + '。'
+    },
+    S: {
+      name: '获取信息 · S',
+      text: lens => '先核对时间和地点，再' + lens.plan + '。有顾虑时，说一件自己遇到过的事。'
+    },
+    N: {
+      name: '获取信息 · N',
+      text: lens => '先说想体验什么，再' + lens.plan + '。也可以举个例子，让对方想象你期待的样子。'
+    },
+    T: {
+      name: '做决定 · T',
+      text: lens => '分歧时可' + lens.care + '，再说判断依据。'
+    },
+    F: {
+      name: '做决定 · F',
+      text: lens => '可以' + lens.care + '，一起看看选择对彼此的影响。'
+    },
+    J: {
+      name: '安排生活 · J',
+      text: lens => '想' + lens.plan + '时，提早定好时间和改期办法。'
+    },
+    P: {
+      name: '安排生活 · P',
+      text: lens => '想' + lens.plan + '时，保留选项，约好确认时间。'
+    }
+  };
+
+  const zodiacOrder = Object.keys(zodiac);
+  const symbolicEcho = {火: '风', 风: '火', 土: '水', 水: '土'};
+
+  function selfTypeCandidates(code) {
+    const [energy, information, decision, planning] = code;
+    return [
+      energy + information + decision + (planning === 'J' ? 'P' : 'J'),
+      energy + (information === 'S' ? 'N' : 'S') + decision + planning,
+      energy + information + (decision === 'T' ? 'F' : 'T') + planning
+    ];
+  }
+
+  function selfSignCandidates(key) {
+    const element = zodiac[key].element;
+    const start = zodiacOrder.indexOf(key) + 1;
+    const nextSigns = zodiacOrder.slice(start).concat(zodiacOrder.slice(0, start - 1));
+    const echo = symbolicEcho[element];
+    return [
+      nextSigns.find(sign => zodiac[sign].element === element),
+      nextSigns.find(sign => zodiac[sign].element === echo),
+      nextSigns.find(sign => ![element, echo].includes(zodiac[sign].element))
+    ];
+  }
+
+  function selfCombinations(person) {
+    const [familiar, information, decision] = selfTypeCandidates(person.mbti);
+    const [shared, echoed, contrast] = selfSignCandidates(person.zodiac);
+    const planning = familiar[3] === 'J' ? '喜欢早定安排' : '喜欢留点弹性';
+    const informationStyle = information[1] === 'S' ? '先看实际细节' : '先看新的可能';
+    const decisionStyle = decision[2] === 'T' ? '先看判断依据' : '先看决定对人的影响';
+    return [
+      {
+        type: familiar, key: shared, name: zodiac[shared].name,
+        title: '从共同话题开始',
+        reason: '跟' + planning + '的 ' + familiar + ' 约周末，若对方认同' + imagery(shared)
+          + '意象，可' + signLens[shared].plan + '。先确定几点见，其余等两人有空再商量。'
+      },
+      {
+        type: information, key: echoed, name: zodiac[echoed].name,
+        title: '把点子说具体',
+        reason: '和习惯' + informationStyle + '的 ' + information + ' 计划见面，若对方认同' + imagery(echoed)
+          + '意象，可' + signLens[echoed].plan + '，再说明这次更想安静聊天，还是想试点新鲜事。'
+      },
+      {
+        type: decision, key: contrast, name: zodiac[contrast].name,
+        title: '从分歧找下一步',
+        reason: '若习惯' + decisionStyle + '的 ' + decision + ' 也认同' + imagery(contrast)
+          + '意象，分歧时可' + signLens[contrast].care + '。如果问题出在临时改期，可以约好下次提前多久告知。'
+      }
+    ];
+  }
+
+  function selfTips(person, lens) {
+    const [energy, , decision, planning] = person.mbti;
+    const invite = energy === 'E' ? '聊清何时有空，再' : '先写一句邀约，再';
+    const timing = planning === 'J' ? '定好时间和改期办法' : '约定确认时间，其他留到当天';
+    const respond = decision === 'T' ? '说清依据，也听对方在意什么' : '听完顾虑，再说自己能做到哪一步';
+    const example = energy === 'E' ? '我想到一个活动，你现在方便聊聊吗？' : '我想先理理思路，明天再和你商量可以吗？';
+    return [
+      {
+        title: '轻松开口',
+        text: lens.situation + '时，' + invite + lens.contact + '，也允许婉拒。可以说“' + example + '”'
+      },
+      {
+        title: '确认时间',
+        text: '想' + lens.plan + '时，' + timing + '。有变动就说清是改时间，还是这次先取消。'
+      },
+      {
+        title: '说清在意什么',
+        text: '分歧时可' + lens.care + '，再' + respond + '。也可以问“我刚理解的，是你的意思吗？”'
+      }
+    ];
+  }
+
+  function analyzeSelf(input) {
+    const person = validate(input);
+    const type = mbti[person.mbti];
+    const lens = signLens[person.zodiac];
+    const image = imagery(person.zodiac);
+    const dimensions = Array.from(person.mbti, letter => {
+      const preference = selfPreferences[letter];
+      return {name: preference.name, text: preference.text(lens)};
+    });
+    return {
+      mode: 'self',
+      title: '你的相处底色 · ' + type.name,
+      intro: '借' + image + '找灵感，试着用 ' + person.mbti + ' 的偏好表达自己。',
+      profile: profile(person),
+      dimensions,
+      tips: selfTips(person, lens),
+      matchCombinations: selfCombinations(person),
+      blessing: '愿你按自己的节奏，遇见聊得来的人。',
+      methodNote: '三组结合 MBTI 偏好与星座意象。首项保留较多相似偏好，取下一个同元素星座。后两项探索信息和决策差异。仅供交流参考，无法预测契合度。性别仅展示。'
+    };
+  }
+
+
+  root.AffinityEngine = Object.freeze({
+    mbti: Object.freeze(mbti), zodiac: Object.freeze(zodiac), analyze, analyzeSelf, method: Object.freeze(method)
+  });
+})(globalThis);
+
+
+</script>
+<script>
+/* 双星引力 — browser-local first-open lifetime and document admission.
+ * Modern browsers: Web Locks serializes same-origin tabs. Older browsers use
+ * an IndexedDB read/write transaction as a mutex. Storage failures fail closed.
+ * Clearing browser data, switching browsers, changing this source or the local
+ * clock cannot be securely prevented by a standalone HTML file.
+ */
+(() => {
+  'use strict';
+  // The seller tool emits 32 random bytes as unpadded, canonical base64url.
+  const tickets = new URLSearchParams(globalThis.location?.search || '').getAll('ticket');
+  const ticket = tickets.length === 1 && /^[A-Za-z0-9_-]{42}[AEIMQUYcgkosw048]$/.test(tickets[0]) ? tickets[0] : null;
+  const namespace = ticket ? ':ticket:' + ticket : '';
+  const KEY = 'double-star-affinity.quota.v1' + namespace;
+  const LOCK = KEY + '.lock';
+  const DB_NAME = 'double-star-affinity-coordination' + namespace;
+  const LIMIT = 3;
+  const WINDOW = 12 * 60 * 60 * 1000;
+  const ZODIAC = new Set(['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']);
+  const GENDERS = new Set(['female', 'male']);
+  // Keep old quota records readable without restoring unsupported old reports.
+  const HISTORICAL_GENDERS = new Set(['female', 'male', 'nonbinary', 'private']);
+  const STORAGE_ERROR = '此浏览器无法保存打开记录，请允许本地存储后重新打开。';
+  const CORRUPT_ERROR = '本地打开记录损坏，暂时无法继续使用。';
+  const EXPIRED_ERROR = '此页面已到期，无法继续使用。';
+  const LIMIT_ERROR = '此链接的 3 次打开机会已用完。';
+  const NOT_ADMITTED_ERROR = '当前页面未获准使用，请重新打开链接。';
+  let queue = Promise.resolve();
+  let databasePromise;
+  let openingRequested = false;
+  let documentOpening = null;
+  const listeners = new Set();
+
+  function validPerson(p, historical = false) {
+    return p && typeof p === 'object' && /^(I|E)(S|N)(T|F)(J|P)$/.test(p.mbti) &&
+      ZODIAC.has(p.zodiac) && (historical ? HISTORICAL_GENDERS : GENDERS).has(p.gender) &&
+      (p.label === undefined || (typeof p.label === 'string' && p.label.length <= 40));
+  }
+
+  function validPayload(p, historical = false) {
+    if (!p || typeof p !== 'object' || !validPerson(p.a, historical) ||
+        !Number.isFinite(p.createdAt) || p.createdAt < 0) return false;
+    if (p.mode === 'self') return p.b === undefined;
+    return p.mode === undefined && validPerson(p.b, historical);
+  }
+
+  function openMutexDatabase() {
+    if (databasePromise) return databasePromise;
+    databasePromise = new Promise((resolve, reject) => {
+      if (!globalThis.indexedDB) { reject(new Error(STORAGE_ERROR)); return; }
+      const request = globalThis.indexedDB.open(DB_NAME, 1);
+      request.onupgradeneeded = () => {
+        if (!request.result.objectStoreNames.contains('mutex')) request.result.createObjectStore('mutex');
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(new Error(STORAGE_ERROR));
+      request.onblocked = () => reject(new Error(STORAGE_ERROR));
+    });
+    return databasePromise;
+  }
+
+  async function indexedMutex(task) {
+    const db = await openMutexDatabase();
+    return new Promise((resolve, reject) => {
+      let result;
+      let failure;
+      let transaction;
+      try { transaction = db.transaction('mutex', 'readwrite'); }
+      catch (_) { reject(new Error(STORAGE_ERROR)); return; }
+      const store = transaction.objectStore('mutex');
+      const request = store.get('serial');
+      request.onsuccess = () => {
+        try {
+          result = task(); // Deliberately synchronous while the transaction owns the mutex.
+          store.put((request.result || 0) + 1, 'serial');
+        } catch (error) { failure = error; transaction.abort(); }
+      };
+      transaction.oncomplete = () => resolve(result);
+      transaction.onabort = () => reject(failure || new Error(STORAGE_ERROR));
+      transaction.onerror = () => { /* onabort reports the failure once. */ };
+    });
+  }
+
+  function withLock(task) {
+    const run = async () => {
+      let taskStarted = false;
+      try {
+        if (globalThis.navigator?.locks?.request) {
+          return await globalThis.navigator.locks.request(LOCK, { mode: 'exclusive' }, () => {
+            taskStarted = true;
+            return task();
+          });
+        }
+      } catch (error) {
+        // A browser may expose Web Locks but reject the origin before entering
+        // its callback (for example with SecurityError). Only then is fallback
+        // safe. A task that already ran may have committed a quota write.
+        if (taskStarted) throw error;
+      }
+      return indexedMutex(task);
+    };
+    const result = queue.then(run, run);
+    queue = result.catch(() => {});
+    return result;
+  }
+
+  function validTime(time) {
+    return Number.isSafeInteger(time) && time >= 0;
+  }
+
+  function read(allowOpening = false) {
+    let raw;
+    try { raw = globalThis.localStorage.getItem(KEY); }
+    catch (_) { throw new Error(STORAGE_ERROR); }
+    const clock = Date.now();
+    if (!validTime(clock) || !validTime(clock + WINDOW)) throw new Error('当前设备时间异常，请校准时间后重试。');
+    if (raw === null) {
+      return allowOpening ? { schema: 3, openings: [], openedAt: clock, lastSeen: clock, latest: null } : null;
+    }
+
+    let state;
+    try { state = JSON.parse(raw); } catch (_) { throw new Error(CORRUPT_ERROR); }
+    if (!state || ![1, 2, 3].includes(state.schema) || !validTime(state.lastSeen) ||
+        !(state.latest === null || validPayload(state.latest, true))) throw new Error(CORRUPT_ERROR);
+    if (state.schema !== 1 && (!validTime(state.openedAt) || state.openedAt > state.lastSeen ||
+        !validTime(state.openedAt + WINDOW))) throw new Error(CORRUPT_ERROR);
+
+    const now = Math.max(clock, state.lastSeen);
+    if (state.schema === 3) {
+      if (!Array.isArray(state.openings) || state.openings.length < 1 || state.openings.length > LIMIT ||
+          new Set(state.openings).size !== state.openings.length ||
+          !state.openings.every(id => id === 'legacy' || (typeof id === 'string' && /^[0-9a-f]{32}$/.test(id)))) {
+        throw new Error(CORRUPT_ERROR);
+      }
+    } else {
+      if (!Array.isArray(state.entries) || state.entries.length > LIMIT ||
+          !state.entries.every((t, i) => validTime(t) && t <= state.lastSeen && (i === 0 || t >= state.entries[i - 1])) ||
+          (state.schema === 2 && state.entries.some(t => t >= state.openedAt + WINDOW))) throw new Error(CORRUPT_ERROR);
+      if (!allowOpening) return null;
+      // Schema 2 recorded the first open, but counted reports. Carry forward
+      // that one known open and the original deadline. Schema 1 had neither.
+      const openedAt = state.schema === 2 ? state.openedAt : now;
+      if (!validTime(openedAt + WINDOW)) throw new Error(CORRUPT_ERROR);
+      state = { schema: 3, openings: state.schema === 2 ? ['legacy'] : [], openedAt, lastSeen: now, latest: state.latest };
+    }
+    state.lastSeen = now;
+    if (now >= state.openedAt + WINDOW) state.latest = null;
+    return state;
+  }
+
+  function save(state) {
+    try {
+      const serialized = JSON.stringify(state);
+      globalThis.localStorage.setItem(KEY, serialized);
+      if (globalThis.localStorage.getItem(KEY) !== serialized) throw new Error(STORAGE_ERROR);
+    } catch (_) { throw new Error(STORAGE_ERROR); }
+  }
+
+  function ownsOpening(state) {
+    return documentOpening !== null && Boolean(state?.openings.includes(documentOpening));
+  }
+
+  function summary(state) {
+    const expiresAt = state ? state.openedAt + WINDOW : null;
+    const expired = state ? state.lastSeen >= expiresAt : false;
+    const used = state ? state.openings.length : 0;
+    const admitted = !expired && ownsOpening(state);
+    const result = {
+      available: true,
+      admitted,
+      remaining: expired ? 0 : LIMIT - used,
+      used,
+      nextAt: null,
+      expiresAt,
+      expired
+    };
+    if (expired) result.error = EXPIRED_ERROR;
+    else if (!admitted) result.error = used === LIMIT ? LIMIT_ERROR : NOT_ADMITTED_ERROR;
+    return result;
+  }
+
+  function failure(error, includeOk) {
+    return { ...(includeOk ? { ok: false } : {}), available: false, admitted: false, remaining: 0, used: LIMIT, nextAt: null, expiresAt: null, expired: false,
+      error: error?.message || STORAGE_ERROR };
+  }
+
+  function notify() {
+    for (const fn of listeners) {
+      try { fn(); } catch (_) { /* A UI listener cannot invalidate a committed quota. */ }
+    }
+  }
+
+  function makeOpeningId() {
+    if (!globalThis.crypto?.getRandomValues) throw new Error(STORAGE_ERROR);
+    const words = globalThis.crypto.getRandomValues(new Uint32Array(4));
+    return Array.from(words, value => value.toString(16).padStart(8, '0')).join('');
+  }
+
+  async function open() {
+    if (openingRequested) return status();
+    openingRequested = true;
+    try {
+      const result = await withLock(() => {
+        const state = read(true);
+        const current = summary(state);
+        if (current.expired) {
+          save(state);
+          return current;
+        }
+        if (current.remaining === 0) return current;
+        const id = makeOpeningId();
+        if (state.openings.includes(id)) throw new Error(STORAGE_ERROR);
+        state.openings.push(id);
+        save(state);
+        documentOpening = id;
+        return summary(state);
+      });
+      if (result.admitted) notify();
+      return result;
+    } catch (error) {
+      documentOpening = null;
+      return failure(error, false);
+    }
+  }
+
+  async function status() {
+    try {
+      return await withLock(() => {
+        const state = read();
+        if (ownsOpening(state)) save(state);
+        return summary(state);
+      });
+    } catch (error) { return failure(error, false); }
+  }
+
+  async function saveReport(payload) {
+    try {
+      const result = await withLock(() => {
+        const state = read();
+        const current = summary(state);
+        if (!current.admitted) {
+          if (ownsOpening(state)) save(state);
+          return { ...current, ok: false };
+        }
+        if (!validPayload(payload)) {
+          save(state);
+          return { ...current, ok: false, error: '请先完整填写本次报告所需的信息。' };
+        }
+        const person = p => ({ mbti: p.mbti, zodiac: p.zodiac, gender: p.gender, label: p.label || '' });
+        if (payload.mode === 'self') {
+          state.latest = { mode: 'self', a: person(payload.a), createdAt: state.lastSeen };
+        } else {
+          state.latest = { a: person(payload.a), b: person(payload.b), createdAt: state.lastSeen };
+        }
+        save(state);
+        return { ...current, ok: true };
+      });
+      if (result.ok) notify();
+      return result;
+    } catch (error) { return failure(error, true); }
+  }
+
+  async function latest() {
+    try {
+      return await withLock(() => {
+        const state = read();
+        if (!ownsOpening(state)) return null;
+        save(state);
+        return summary(state).admitted && validPayload(state.latest) ? state.latest : null;
+      });
+    } catch (_) { return null; }
+  }
+
+  function subscribe(fn) {
+    if (typeof fn !== 'function') throw new TypeError('A listener function is required.');
+    listeners.add(fn);
+    return () => listeners.delete(fn);
+  }
+
+  globalThis.addEventListener?.('storage', event => {
+    if (event.key === null) { notify(); return; }
+    if (event.key !== KEY) return;
+    // A status read persists lastSeen for clock rollback protection. Do not turn
+    // those bookkeeping writes into a status/storage feedback loop across tabs.
+    try {
+      if (event.oldValue && event.newValue) {
+        const before = JSON.parse(event.oldValue);
+        const after = JSON.parse(event.newValue);
+        if (before.schema === after.schema && before.openedAt === after.openedAt &&
+            (before.lastSeen >= before.openedAt + WINDOW) === (after.lastSeen >= after.openedAt + WINDOW) &&
+            JSON.stringify(before.openings) === JSON.stringify(after.openings) &&
+            JSON.stringify(before.latest) === JSON.stringify(after.latest)) return;
+      }
+    } catch (_) { /* A corrupt record must still reach the UI. */ }
+    notify();
+  });
+  globalThis.AffinityQuota = Object.freeze({ open, status, saveReport, latest, subscribe, limit: LIMIT, windowMs: WINDOW });
+})();
+
+</script>
+<script>
+/* Standalone PNG renderer for an already generated 双星引力 report. */
+(function (root) {
+  'use strict';
+
+  const WIDTH = 760;
+  const MARGIN = 42;
+  const CONTENT_WIDTH = WIDTH - MARGIN * 2;
+  const MAX_SIDE = 8192;
+  const MAX_PIXELS = 5_400_000;
+  const SANS = '"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif';
+  const INK = '#f8effb';
+  const BODY = '#e1d4e9';
+  const MUTED = '#c6b6d0';
+  const OPENING = new Set(Array.from('（〔［｛【《〈「『〖〘〚“‘([{'));
+  const CLOSING = new Set(Array.from('，。！？：；、）〕］｝】》〉」』〗〙〛”’…～—％,.!?;:)]}%'));
+  const LATIN_WORD = /^[A-Za-z0-9._/@%+\-]$/;
+
+  function color(value) {
+    if (!/^#[\da-f]{6}$/i.test(value)) throw new Error('报告的幸运色信息不完整。');
+    return value;
+  }
+
+  function text(value) {
+    if (typeof value !== 'string' || !value.trim()) throw new Error('报告内容不完整，无法生成完整长图。');
+    return value;
+  }
+
+  function font(size, weight = 400) {
+    return `${weight} ${size}px ${SANS}`;
+  }
+
+  // Prefer word boundaries and avoid stranding paired Chinese punctuation.
+  // If an unbroken word or URL is wider than the column, it can break anywhere.
+  function wrap(ctx, value, width) {
+    const lines = [];
+    for (const paragraph of value.replace(/\r\n?/g, '\n').split('\n')) {
+      const chars = Array.from(paragraph);
+      if (!chars.length) {
+        lines.push('');
+        continue;
+      }
+      let start = 0;
+      while (start < chars.length) {
+        let end = start;
+        let candidate = '';
+        let preferred = start;
+        let punctuationSafe = start;
+        while (end < chars.length) {
+          const next = candidate + chars[end];
+          if (end > start && ctx.measureText(next).width > width) break;
+          candidate = next;
+          end++;
+          const left = chars[end - 1];
+          const right = chars[end];
+          if (!right || (!OPENING.has(left) && !CLOSING.has(right))) {
+            punctuationSafe = end;
+            if (!(LATIN_WORD.test(left) && LATIN_WORD.test(right || ''))) preferred = end;
+          }
+        }
+        const stop = end === chars.length ? end : (preferred > start ? preferred : (punctuationSafe > start ? punctuationSafe : end));
+        lines.push(chars.slice(start, stop).join('').trimEnd());
+        start = stop;
+        while (start < chars.length && /[ \t]/.test(chars[start])) start++;
+      }
+    }
+    return lines;
+  }
+
+  function roundedRect(ctx, x, y, w, h, radius) {
+    const r = Math.min(radius, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+
+  function shine(ctx, x, y, r, fill) {
+    ctx.beginPath();
+    ctx.moveTo(x, y - r);
+    ctx.quadraticCurveTo(x + r * .18, y - r * .18, x + r, y);
+    ctx.quadraticCurveTo(x + r * .18, y + r * .18, x, y + r);
+    ctx.quadraticCurveTo(x - r * .18, y + r * .18, x - r, y);
+    ctx.quadraticCurveTo(x - r * .18, y - r * .18, x, y - r);
+    ctx.closePath();
+    ctx.fillStyle = fill;
+    ctx.fill();
+  }
+
+  // Match CSS linear-gradient angles: 0° points up and 90° points right.
+  function themeGradient(ctx, x, y, width, height, accents, angle, alpha = '') {
+    const radians = (angle % 360) * Math.PI / 180;
+    const dx = Math.sin(radians);
+    const dy = -Math.cos(radians);
+    const halfLength = (Math.abs(dx) * width + Math.abs(dy) * height) / 2;
+    const middleX = x + width / 2;
+    const middleY = y + height / 2;
+    const gradient = ctx.createLinearGradient(
+      middleX - dx * halfLength, middleY - dy * halfLength,
+      middleX + dx * halfLength, middleY + dy * halfLength
+    );
+    accents.forEach((shade, index) => gradient.addColorStop(index / (accents.length - 1), shade + alpha));
+    return gradient;
+  }
+
+  function paletteRibbon(ctx, x, y, width, height, accents) {
+    roundedRect(ctx, x, y, width, height, height / 2);
+    ctx.fillStyle = themeGradient(ctx, x, y, width, height, accents, 90);
+    ctx.fill();
+  }
+
+  function panelFill(ctx, x, y, w, h, accents, angle, dark = '#1b152b') {
+    roundedRect(ctx, x, y, w, h, 22);
+    ctx.fillStyle = dark;
+    ctx.fill();
+    if (accents.length === 4) {
+      ctx.fillStyle = themeGradient(ctx, x, y, w, h, accents, angle, '34');
+      ctx.fill();
+      ctx.strokeStyle = themeGradient(ctx, x, y, w, h, accents, angle, '85');
+      ctx.lineWidth = 1.25;
+      ctx.stroke();
+      return;
+    }
+    const glaze = ctx.createLinearGradient(x, y, x + w, y + Math.min(h, 360));
+    glaze.addColorStop(0, accents[0] + '29');
+    glaze.addColorStop(.52, '#1b152b05');
+    glaze.addColorStop(1, accents[1] + '24');
+    ctx.fillStyle = glaze;
+    ctx.fill();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = accents[0] + '4a';
+    ctx.stroke();
+  }
+
+  function createPlan(ctx, angle) {
+    const draws = [];
+    return {
+      draws,
+      text(value, x, y, width, options = {}) {
+        const {size = 24, lineHeight = 38, weight = 400, fill = BODY, align = 'left'} = options;
+        const face = font(size, weight);
+        ctx.font = face;
+        const lines = wrap(ctx, text(value), width);
+        draws.push(canvas => {
+          canvas.font = face;
+          canvas.fillStyle = fill;
+          canvas.textAlign = align;
+          canvas.textBaseline = 'middle';
+          const origin = align === 'center' ? x + width / 2 : x;
+          lines.forEach((line, index) => canvas.fillText(line, origin, y + (index + .5) * lineHeight));
+        });
+        return y + lines.length * lineHeight;
+      },
+      panel(x, y, width, padding, accents, content, dark) {
+        let height;
+        draws.push(canvas => panelFill(canvas, x, y, width, height, accents, angle, dark));
+        const bottom = content(x + padding, y + padding, width - padding * 2);
+        height = bottom - y + padding;
+        return y + height;
+      }
+    };
+  }
+
+  function readReport(current) {
+    const {payload, data, palette} = current || {};
+    const engine = root.AffinityEngine;
+    if (!payload || !data || !engine || !Number.isFinite(payload.createdAt)) {
+      throw new Error('请先生成一份完整的报告。');
+    }
+    const self = payload.mode === 'self';
+    const hasEntries = value => Array.isArray(value) && value.length > 0;
+    const hasMainSections = hasEntries(data.dimensions) && hasEntries(data.tips);
+    const hasModeSections = self
+      ? data.mode === 'self' && hasEntries(data.profile?.paragraphs) &&
+        hasEntries(data.matchCombinations)
+      : Number.isFinite(data.score) && data.profiles?.length === 2 &&
+        Array.isArray(data.profiles) && hasEntries(data.patterns);
+    if (!hasMainSections || !hasModeSections) {
+      throw new Error('报告章节不完整，无法生成完整长图。');
+    }
+    const people = (self ? [payload.a] : [payload.a, payload.b]).map((person, index) => {
+      const mbti = person && engine.mbti[person.mbti];
+      const zodiac = person && engine.zodiac[person.zodiac];
+      const gender = person && ({male: '男', female: '女'})[person.gender];
+      if (!mbti || !zodiac || !gender) throw new Error('报告中的个人资料不完整。');
+      return {
+        label: person.label || (index === 0 ? '你' : '对方'),
+        code: person.mbti,
+        gender,
+        zodiac,
+        mbti,
+        colors: [color(mbti.color), color(zodiac.color)]
+      };
+    });
+    const accents = people.flatMap(person => person.colors);
+    const angle = Number.isFinite(palette?.angle) ? palette.angle : 135;
+    return {self, people, data, engine, createdAt: payload.createdAt, accents: self ? [...accents, ...accents] : accents, angle};
+  }
+
+  function planPerson(plan, person, x, y, width) {
+    const [mbtiColor, zodiacColor] = person.colors;
+    return plan.panel(x, y, width, 20, person.colors, (left, top, inner) => {
+      let next = plan.text(`${person.label}的星球 · ${person.gender}`, left, top, inner, {size: 18, lineHeight: 27, fill: MUTED});
+      next = plan.text(person.code, left, next + 3, inner, {size: 40, lineHeight: 51, fill: mbtiColor, weight: 700});
+      next = plan.text(`${person.zodiac.symbol} ${person.zodiac.name} · ${person.zodiac.element}象`, left, next + 2, inner, {size: 21, lineHeight: 33, fill: INK});
+      for (const [label, name, fill] of [['MBTI', person.mbti.colorName, mbtiColor], ['星座', person.zodiac.colorName, zodiacColor]]) {
+        const dotY = next + 14;
+        plan.draws.push(canvas => shine(canvas, left + 5, dotY, 5, fill));
+        next = plan.text(`${label} ${name} ${fill.toUpperCase()}`, left + 16, next, inner - 16, {size: 17, lineHeight: 28, fill: MUTED});
+      }
+      return next;
+    }, '#20182e');
+  }
+
+  function planHeader(plan, report, start) {
+    const {data, people, accents, angle} = report;
+    const [mbtiA, zodiacA, mbtiB] = accents;
+    plan.draws.push(ctx => {
+      shine(ctx, WIDTH / 2, start + 11, 10, zodiacA);
+      shine(ctx, WIDTH / 2 - 23, start + 13, 4, mbtiA);
+      shine(ctx, WIDTH / 2 + 22, start + 6, 4, mbtiB);
+    });
+    const labelEnd = plan.text(`双星引力 · ${data.relationshipLabel}相处报告`, MARGIN, start + 32, CONTENT_WIDTH,
+      {size: 23, lineHeight: 35, fill: INK, align: 'center', weight: 600});
+    plan.draws.push(ctx => paletteRibbon(ctx, MARGIN, labelEnd + 9, CONTENT_WIDTH, 5, accents));
+    return plan.panel(MARGIN, labelEnd + 22, CONTENT_WIDTH, 25, accents, (left, top, inner) => {
+      let next = plan.text(data.title, left + 6, top + 3, inner - 12,
+        {size: 39, lineHeight: 56, fill: INK, align: 'center', weight: 700});
+      const personWidth = (inner - 16) / 2;
+      const personY = next + 18;
+      next = Math.max(
+        planPerson(plan, people[0], left, personY, personWidth),
+        planPerson(plan, people[1], left + personWidth + 16, personY, personWidth)
+      );
+
+      const scoreY = next + 17;
+      plan.draws.push(ctx => {
+        roundedRect(ctx, left, scoreY, inner, 105, 17);
+        ctx.fillStyle = themeGradient(ctx, left, scoreY, inner, 105, accents, angle, '40');
+        ctx.fill();
+        ctx.strokeStyle = '#ffffff29';
+        ctx.stroke();
+      });
+      plan.text(`${data.score} / 100`, left + 17, scoreY + 23, 195, {size: 42, lineHeight: 57, weight: 700, fill: INK});
+      plan.text(data.scoreLabel, left + 227, scoreY + 22, inner - 244, {size: 23, lineHeight: 30, weight: 600, fill: INK});
+      plan.text('本站娱乐指数 · 非关系成功率', left + 227, scoreY + 54, inner - 244, {size: 18, lineHeight: 25, fill: MUTED});
+      return plan.text(data.intro, left, scoreY + 127, inner, {size: 25, lineHeight: 39});
+    });
+  }
+
+  function planSection(plan, y, index, title, accent, accents) {
+    const top = y + 18;
+    plan.text(String(index).padStart(2, '0'), MARGIN + 1, top + 3, 48,
+      {size: 23, lineHeight: 37, fill: accent, weight: 700});
+    const end = plan.text(title, MARGIN + 49, top, CONTENT_WIDTH - 50,
+      {size: 30, lineHeight: 43, fill: INK, weight: 700});
+    plan.draws.push(ctx => paletteRibbon(ctx, MARGIN + 49, end + 3, 166, 4, accents));
+    return end + 15;
+  }
+
+  function finishPlan(plan, y, createdAt) {
+    const date = new Date(createdAt).toLocaleString('zh-CN', {hour12: false});
+    y = plan.text(`生成于 ${date} · 双星引力`, MARGIN, y + 23, CONTENT_WIDTH,
+      {size: 18, lineHeight: 28, fill: MUTED, align: 'center'});
+    y = plan.text('本地生成 · 未上传个人信息', MARGIN, y + 2, CONTENT_WIDTH,
+      {size: 17, lineHeight: 26, fill: MUTED, align: 'center'});
+    return {draws: plan.draws, height: Math.ceil(y + 40)};
+  }
+
+  function planSelfReport(ctx, report) {
+    const {data, people: [person], createdAt, accents, angle} = report;
+    const [mbtiColor, zodiacColor] = person.colors;
+    const plan = createPlan(ctx, angle);
+    const body = {size: 24, lineHeight: 37};
+    const subtitle = {size: 26, lineHeight: 39, weight: 650, fill: INK};
+    plan.draws.push(canvas => shine(canvas, WIDTH / 2, 54, 10, zodiacColor));
+    let y = plan.text('双星引力 · 个人报告', MARGIN, 75, CONTENT_WIDTH,
+      {size: 23, lineHeight: 35, fill: INK, align: 'center', weight: 600});
+    y = plan.text(data.title, MARGIN, y + 14, CONTENT_WIDTH,
+      {size: 39, lineHeight: 56, fill: INK, align: 'center', weight: 700});
+    const ribbonY = y + 6;
+    plan.draws.push(canvas => paletteRibbon(canvas, MARGIN, ribbonY, CONTENT_WIDTH, 5, accents));
+    y = planPerson(plan, person, MARGIN, y + 18, CONTENT_WIDTH);
+    y = plan.text(data.intro, MARGIN, y + 20, CONTENT_WIDTH, body);
+
+    y = planSection(plan, y, 1, '你在日常里的相处方式', mbtiColor, accents);
+    y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, person.colors, (left, top, inner) => {
+      let next = plan.text(data.profile.headline, left, top, inner, subtitle);
+      for (const paragraph of data.profile.paragraphs) {
+        next = plan.text(paragraph, left, next + 9, inner, body);
+      }
+      for (const {name, text: explanation} of data.dimensions) {
+        next = plan.text(name, left, next + 18, inner, {...subtitle, fill: mbtiColor});
+        next = plan.text(explanation, left, next + 4, inner, body);
+      }
+      return next;
+    });
+
+    y = planSection(plan, y, 2, 'MBTI × 星座搭配参考', zodiacColor, accents);
+    for (const {type, name, title, reason} of data.matchCombinations) {
+      y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, person.colors, (left, top, inner) => {
+        let next = plan.text(`${type} × ${name}`, left, top, inner, {...subtitle, fill: mbtiColor});
+        next = plan.text(title, left, next + 3, inner,
+          {size: 20, lineHeight: 32, fill: zodiacColor});
+        return plan.text(reason, left, next + 4, inner, body);
+      }) + 12;
+    }
+    y = plan.text(data.methodNote, MARGIN, y + 4, CONTENT_WIDTH,
+      {size: 20, lineHeight: 32, fill: MUTED});
+
+    y = planSection(plan, y, 3, '可以试试的建议', mbtiColor, accents);
+    y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, person.colors, (left, top, inner) => {
+      let next = top;
+      for (const [index, {title, text: advice}] of data.tips.entries()) {
+        next = plan.text(`${String(index + 1).padStart(2, '0')} · ${title}`, left, next, inner, subtitle);
+        next = plan.text(advice, left, next + 7, inner, body) + 12;
+      }
+      return next - 12;
+    });
+    y = plan.panel(MARGIN, y + 22, CONTENT_WIDTH, 22, person.colors, (left, top, inner) => {
+      const next = plan.text('给你的一句祝福', left, top, inner, {...subtitle, align: 'center'});
+      return plan.text(data.blessing, left, next + 8, inner, body);
+    });
+    return finishPlan(plan, y, createdAt);
+  }
+
+  function planReport(ctx, report) {
+    const {data, engine, createdAt, accents, people, angle} = report;
+    const plan = createPlan(ctx, angle);
+    const body = {size: 24, lineHeight: 37};
+    const subtitle = {size: 26, lineHeight: 39, weight: 650, fill: INK};
+    const small = {size: 19, lineHeight: 30, fill: MUTED};
+    const pair = index => index % 2 === 0 ? people[0].colors : people[1].colors;
+    let y = planHeader(plan, report, 43) + 13;
+
+    y = planSection(plan, y, 1, '你们的相处频率', accents[0], accents);
+    data.dimensions.slice(0, 3).forEach((entry, index) => {
+      y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, pair(index), (left, top, inner) => {
+        let next = plan.text(entry.name, left, top, inner, subtitle);
+        next = plan.text(`${entry.tag} · 参考 ${entry.score}/100`, left, next + 1, inner, small);
+        return plan.text(entry.text, left, next + 7, inner, body);
+      }) + 12;
+    });
+
+    y = planSection(plan, y, 2, '彼此画像', accents[2], accents);
+    data.profiles.forEach((entry, index) => {
+      y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, pair(index), (left, top, inner) => {
+        let next = plan.text(entry.label, left, top, inner, {...small, fill: pair(index)[0]});
+        next = plan.text(entry.headline, left, next + 1, inner, subtitle);
+        if (!Array.isArray(entry.paragraphs) || !entry.paragraphs.length) throw new Error('人物画像内容不完整。');
+        for (const paragraph of entry.paragraphs) next = plan.text(paragraph, left, next + 9, inner, body);
+        return next;
+      }) + 12;
+    });
+
+    y = planSection(plan, y, 3, data.sceneHeading, accents[1], accents);
+    data.patterns.forEach((entry, index) => {
+      y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, pair(index), (left, top, inner) => {
+        const number = String(index + 1).padStart(2, '0');
+        let next = plan.text(`${number} · ${entry.title}`, left, top, inner, subtitle);
+        next = plan.text(entry.scene, left, next + 9, inner, {...body, fill: INK});
+        return plan.text(`试试 · ${entry.action}`, left, next + 9, inner, body);
+      }) + 12;
+    });
+
+    y = planSection(plan, y, 4, data.tipsHeading, accents[3], accents);
+    data.tips.forEach((entry, index) => {
+      y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, pair(index), (left, top, inner) => {
+        const next = plan.text(`${String(index + 1).padStart(2, '0')} · ${entry.title}`, left, top, inner, subtitle);
+        return plan.text(entry.text, left, next + 7, inner, body);
+      }) + 12;
+    });
+
+    y = plan.panel(MARGIN, y + 14, CONTENT_WIDTH, 26, accents, (left, top, inner) => {
+      plan.draws.push(canvas => shine(canvas, WIDTH / 2, top + 11, 11, accents[1]));
+      const next = plan.text(data.blessingHeading, left, top + 28, inner,
+        {size: 30, lineHeight: 44, weight: 650, align: 'center', fill: INK});
+      return plan.text(data.blessing, left, next + 9, inner, {size: 25, lineHeight: 40, fill: INK});
+    }) + 20;
+
+    y = planSection(plan, y, 5, '评分规则与解读边界', accents[0], accents);
+    y = plan.panel(MARGIN, y, CONTENT_WIDTH, 22, [accents[0], accents[2]], (left, top, inner) => {
+      const detail = {size: 21, lineHeight: 33, fill: BODY};
+      let next = plan.text(data.formula, left, top, inner, detail);
+      next = plan.text('星座意象融入相处场景，占总分的 15%。', left, next + 9, inner, detail);
+      for (const item of [engine.method.summary, engine.method.scoreMeaning, engine.method.colorNote, engine.method.genderNote]) {
+        next = plan.text(item, left, next + 9, inner, detail);
+      }
+      next = plan.text('保存长图不扣打开次数。', left, next + 9, inner, detail);
+      if (Array.isArray(engine.method.sources) && engine.method.sources.length) {
+        next = plan.text('资料来源', left, next + 14, inner, {size: 22, lineHeight: 34, weight: 600, fill: INK});
+        for (const source of engine.method.sources) {
+          next = plan.text(source.title, left, next + 7, inner, {size: 18, lineHeight: 29, fill: BODY});
+          next = plan.text(source.url, left, next, inner, {size: 17, lineHeight: 26, fill: MUTED});
+        }
+      }
+      return next;
+    });
+
+    return finishPlan(plan, y, createdAt);
+  }
+
+  function paintSky(ctx, height, accents, angle) {
+    ctx.fillStyle = '#100d21';
+    ctx.fillRect(0, 0, WIDTH, height);
+    ctx.fillStyle = themeGradient(ctx, 0, 0, WIDTH, height, accents, angle, '27');
+    ctx.fillRect(0, 0, WIDTH, height);
+    const centerX = [.12, .78, .88, .20];
+    const centerY = [.18, .12, .70, .88];
+    accents.forEach((fill, index) => {
+      const radius = WIDTH * .8;
+      const x = WIDTH * centerX[index];
+      const y = height * centerY[index];
+      const glow = ctx.createRadialGradient(x, y, 0, x, y, radius);
+      glow.addColorStop(0, fill + '42');
+      glow.addColorStop(1, fill + '00');
+      ctx.fillStyle = glow;
+      ctx.fillRect(Math.max(0, x - radius), Math.max(0, y - radius), Math.min(WIDTH, radius * 2), radius * 2);
+    });
+
+    // Fixed seed keeps the same report visually stable on every export.
+    let seed = 310519;
+    const random = () => {
+      seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+      return seed / 4294967296;
+    };
+    for (let i = 0; i < Math.ceil(height / 24); i++) {
+      const x = 10 + random() * (WIDTH - 20);
+      const y = 12 + random() * (height - 24);
+      if (i % 19 === 0) shine(ctx, x, y, 2 + random() * 3, accents[i % 4] + '8c');
+      else {
+        ctx.beginPath();
+        ctx.arc(x, y, .6 + random() * 1.1, 0, Math.PI * 2);
+        ctx.fillStyle = '#f8effb50';
+        ctx.fill();
+      }
+    }
+    ctx.fillStyle = '#ffffff12';
+    ctx.fillRect(20, 24, 1, height - 48);
+    ctx.fillRect(WIDTH - 21, 24, 1, height - 48);
+  }
+
+  function encode(canvas) {
+    return new Promise((resolve, reject) => {
+      if (typeof canvas.toBlob !== 'function') {
+        reject(new Error('当前浏览器不支持导出 PNG 长图。'));
+        return;
+      }
+      try {
+        canvas.toBlob(blob => {
+          if (blob && blob.type === 'image/png' && blob.size > 0) resolve(blob);
+          else reject(new Error('PNG 编码失败。请释放一些手机内存后重试。'));
+        }, 'image/png');
+      } catch (error) {
+        reject(new Error('PNG 编码失败。请尝试在普通浏览器中打开此文件。', {cause: error}));
+      }
+    });
+  }
+
+  async function paintPng(canvas, plan, {accents, angle}, maxSide, maxPixels) {
+    const {draws, height} = plan;
+    try {
+      const scale = Math.min(1, maxSide / height, Math.sqrt(maxPixels / (WIDTH * height)));
+      canvas.width = Math.max(1, Math.floor(WIDTH * scale));
+      canvas.height = Math.max(1, Math.floor(height * scale));
+      const ctx = canvas.getContext('2d', {alpha: false});
+      if (!ctx) throw new Error('当前浏览器无法分配长图画布。');
+      ctx.setTransform(canvas.width / WIDTH, 0, 0, canvas.height / height, 0, 0);
+      paintSky(ctx, height, accents, angle);
+      for (const draw of draws) draw(ctx);
+      return await encode(canvas);
+    } finally {
+      // Release the backing store once the PNG Blob owns the encoded pixels.
+      canvas.width = 0;
+      canvas.height = 0;
+    }
+  }
+
+  async function render(current) {
+    const report = readReport(current);
+    const canvas = root.document.createElement('canvas');
+    if (typeof canvas.toBlob !== 'function') throw new Error('当前浏览器不支持导出 PNG 长图。');
+    const metrics = canvas.getContext('2d', {alpha: false});
+    if (!metrics) throw new Error('当前浏览器无法创建长图画布。');
+    const plan = report.self ? planSelfReport(metrics, report) : planReport(metrics, report);
+    try {
+      return await paintPng(canvas, plan, report, MAX_SIDE, MAX_PIXELS);
+    } catch (error) {
+      // Some mobile browsers impose lower canvas limits. Reuse the full layout at lower resolution.
+      if (plan.height <= 4096) throw error;
+      const smallerCanvas = root.document.createElement('canvas');
+      return await paintPng(smallerCanvas, plan, report, 4096, 3_200_000);
+    }
+  }
+
+  root.AffinityPoster = Object.freeze({render});
+})(globalThis);
+
+</script>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id), E=globalThis.AffinityEngine, Q=globalThis.AffinityQuota;
+const genderLabels={male:'男',female:'女'};
+const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let busy=false,current=null,quotaState=null,quotaTimer,toastTimer;
+let mode='pair';
+const error=message=>{$('formError').textContent=message;$('formError').hidden=!message;};
+function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3200);}
+function fillOptions(){for(const prefix of ['a','b']){for(const [key,m] of Object.entries(E.mbti)){$(prefix+'Mbti').add(new Option(key+' · '+m.name,key));}for(const [key,z] of Object.entries(E.zodiac)){$(prefix+'Zodiac').add(new Option(z.symbol+' '+z.name,key));}}}
+function legends(){for(const [kind,entries] of [['mbti',E.mbti],['zodiac',E.zodiac]]){$(kind+'Legend').innerHTML=Object.entries(entries).map(([k,v])=>`<span class="palette-item"><i class="swatch" style="background:${escape(v.color)};color:${escape(v.color)}" aria-hidden="true"></i><span>${escape(kind==='mbti'?k:v.name)}<br>${escape(v.colorName)}</span></span>`).join('');}$('methodFormula').textContent=typeof E.method==='string'?E.method:E.method.formula||E.method.description||'以 MBTI 偏好协调维度与星座元素象征进行固定规则加权；详细公式见结果页。';}
+function getPerson(prefix,label){return {mbti:$(prefix+'Mbti').value,zodiac:$(prefix+'Zodiac').value,gender:$(prefix+'Gender').value,label};}
+function isSelf(payload){return payload.mode==='self';}
+
+function selectMode(nextMode){
+  if(busy) return;
+  mode=nextMode;
+  const self=mode==='self';
+  $('chooseSelf').setAttribute('aria-pressed',String(self));
+  $('choosePair').setAttribute('aria-pressed',String(!self));
+  $('personB').hidden=self;
+  for(const id of ['bMbti','bZodiac','bGender']) $(id).disabled=self;
+  $('peopleGrid').dataset.mode=mode;
+  $('panelTitle').textContent=self?'写下你的星球坐标':'写下你们的星球坐标';
+  $('panelKicker').textContent=self?'01 / MEET YOURSELF':'01 / MEET EACH OTHER';
+  $('homeTitleLead').textContent=self?'你的星球，':'你们的相遇，';
+  $('homeModeTag').textContent=self?'读懂自己的偏好':'只属于你们的相处指南';
+  $('homeIntro').innerHTML=self
+    ? '从 MBTI 偏好和星座意象出发，<br>看看你怎样感受世界，<br>又可以从哪里开始理解彼此。'
+    : '有人像星光，有人像晚风。<br>从性格的偏好，到星座的浪漫想象，<br>一起看看，你们会写出怎样的日常。';
+  error('');
+  if(quotaState) renderQuota();
+}
+
+function restoreFields(payload){
+  selectMode(isSelf(payload)?'self':'pair');
+  const people=isSelf(payload)?[['a',payload.a]]:[['a',payload.a],['b',payload.b]];
+  for(const [prefix,person] of people){
+    for(const field of ['mbti','zodiac','gender']){
+      $(prefix+field[0].toUpperCase()+field.slice(1)).value=person[field];
+    }
+  }
+}
+
+function validPayload(payload){
+  if(!payload || !Number.isFinite(payload.createdAt)) return false;
+  const validPerson=person=>person && Object.hasOwn(E.mbti,person.mbti)
+    && Object.hasOwn(E.zodiac,person.zodiac) && Object.hasOwn(genderLabels,person.gender);
+  return validPerson(payload.a) && (isSelf(payload) || validPerson(payload.b));
+}
+
+function analyzePayload(payload){
+  return isSelf(payload)?E.analyzeSelf(payload.a):E.analyze(payload.a,payload.b);
+}
+
+function reportHeading(payload,data){
+  return isSelf(payload)?'个人解读报告':data.relationshipLabel+'相处报告';
+}
+
+function reportFilename(report,suffix){
+  const {a,b}=report.payload;
+  const type=isSelf(report.payload)?a.mbti+'_个人':a.mbti+'_'+b.mbti+'_'+report.data.relationshipLabel;
+  return `双星引力_${type}${suffix}`;
+}
+function theme(a,b=a){
+  const types=Object.keys(E.mbti), signs=Object.keys(E.zodiac);
+  const personCount=types.length*signs.length, pairCount=personCount**2;
+  const personIndex=p=>types.indexOf(p.mbti)*signs.length+signs.indexOf(p.zodiac);
+  const pairIndex=personIndex(a)*personCount+personIndex(b);
+  // 997 is coprime with 36,864, so adjacent choices spread across distinct angles.
+  const angle=(pairIndex*997%pairCount)/pairCount*360;
+  const colors={a:E.mbti[a.mbti].color,az:E.zodiac[a.zodiac].color,b:E.mbti[b.mbti].color,bz:E.zodiac[b.zodiac].color};
+  const {style,dataset}=document.body;
+  for(const [key,color] of Object.entries(colors)){
+    style.setProperty('--'+key,color);
+    style.setProperty('--'+key+'-glow',color+'24');
+    style.setProperty('--'+key+'-light',color+'62');
+  }
+  style.setProperty('--palette-angle',angle.toFixed(3)+'deg');
+  dataset.view='report';
+  return {angle};
+}
+const paletteRibbon='<div class="palette-ribbon" aria-hidden="true"></div>';
+function personCard(p){const m=E.mbti[p.mbti],z=E.zodiac[p.zodiac];return `<div class="match-person"><h2>${escape(p.label)}的星球</h2><div class="type-large" style="color:${m.color}">${escape(p.mbti)}</div><p class="match-zodiac">${escape(z.symbol)} ${escape(z.name)} · ${escape(z.element)}象</p><span class="gender-label">${escape(genderLabels[p.gender])}</span><div class="color-chips"><span><i class="swatch" style="background:${m.color};color:${m.color}" aria-hidden="true"></i>${escape(m.colorName)}</span><span><i class="swatch" style="background:${z.color};color:${z.color}" aria-hidden="true"></i>${escape(z.colorName)}</span></div></div>`;}
+const section=(num,title,en)=>`<div class="section-heading"><span class="num">${num}</span><h2>${escape(title)}</h2><small>${en}</small></div>`;
+function buildSelfReport(data,payload){
+  const {profile}=data;
+  return `<div class="report-hero self-report-hero">
+    <div class="eyebrow">SELF PORTRAIT · 个人解读报告</div>
+    <h1 id="reportTitle" tabindex="-1">${escape(data.title)}</h1>
+    <p class="report-sub">${escape(data.intro)}</p>
+    ${personCard(payload.a)}
+    ${paletteRibbon}
+  </div>
+  ${section('01','你在日常里的相处方式','SELF PORTRAIT')}
+  <div class="profile-card self-profile"><h3>${escape(profile.headline)}</h3>
+    ${profile.paragraphs.map(text=>`<p>${escape(text)}</p>`).join('')}
+  </div>
+  <div class="dimensions">${data.dimensions.map(d=>`<section class="dimension"><h3>${escape(d.name)}</h3><p>${escape(d.text)}</p></section>`).join('')}</div>
+  ${section('02','值得聊聊的相处组合','MATCH REFERENCES')}
+  <div class="self-matches">
+    ${data.matchCombinations.map(match=>`<section class="profile-card match-combination">
+      <h3>${escape(match.type)} × ${escape(match.name)}</h3>
+      <p class="combo-title">${escape(match.title)}</p>
+      <p>${escape(match.reason)}</p>
+    </section>`).join('')}
+  </div>
+  <p class="formula-details self-method-note">${escape(data.methodNote)}</p>
+  ${section('03','给自己的相处练习','A LITTLE PRACTICE')}
+  <div class="tips">${data.tips.map((tip,index)=>`<section class="tip"><span class="tip-num">${String(index+1).padStart(2,'0')}</span><h3>${escape(tip.title)}</h3><p>${escape(tip.text)}</p></section>`).join('')}</div>
+  <section class="blessing"><div class="star" aria-hidden="true">✧</div><small>A WISH FOR YOU</small><h2>送给你的祝福</h2><p>${escape(data.blessing)}</p></section>
+  <p class="report-meta">生成于 ${escape(new Date(payload.createdAt).toLocaleString('zh-CN',{hour12:false}))} · 双星引力 · 本地生成</p>`;
+}
+
+function reportMarkup(data,payload){
+  return isSelf(payload)?buildSelfReport(data,payload):buildReport(data,payload);
+}
+function buildReport(data,payload){const {a,b,createdAt}=payload;return `<div class="report-hero"><div class="eyebrow">${data.relationship==='friendship'?'FRIENDSHIP':'LOVE'} · ${escape(data.relationshipLabel)}相处报告</div><h1 id="reportTitle" tabindex="-1">${escape(data.title)}</h1><p class="report-sub">${escape(data.intro)}</p><div class="match-layout">${personCard(a)}<div class="score-orbit"><div class="score-number">${data.score}<small> / 100</small></div><div class="score-label">${escape(data.scoreLabel)}</div><div class="score-note">本站娱乐指数 · 非关系成功率</div></div>${personCard(b)}</div><p class="result-note">把解读和真实相处对照着看。</p>${paletteRibbon}</div>
+${section('01','你们的相处观察','THE WAY YOU CONNECT')}<div class="dimensions">${data.dimensions.slice(0,3).map(d=>`<section class="dimension"><div class="dimension-header"><h3>${escape(d.name)}</h3><span class="dimension-tag">${escape(d.tag)}</span></div><p>${escape(d.text)}</p><div class="dim-track" aria-hidden="true"><span class="dim-fill" style="width:${d.score}%"></span></div><div class="dim-value">规则参考值 ${d.score} / 100 · 非实测</div></section>`).join('')}</div>
+${section('02',data.relationship==='friendship'?'读懂彼此，做更懂对方的朋友':'先读懂彼此，再慢慢靠近','UNDERSTANDING EACH OTHER')}<div class="profiles">${data.profiles.map((p,i)=>`<section class="profile-card"><div class="profile-label">${escape(p.label)} · ${escape(i===0?a.mbti:b.mbti)} × ${escape(E.zodiac[i===0?a.zodiac:b.zodiac].name)}</div><h3>${escape(p.headline)}</h3>${p.paragraphs.map(t=>`<p>${escape(t)}</p>`).join('')}</section>`).join('')}</div>
+${section('03',data.sceneHeading,'LITTLE SCENES OF US')}<div class="patterns">${data.patterns.map((p,i)=>`<section class="pattern"><span class="scene-index">Scene ${String(i+1).padStart(2,'0')}</span><h3>${escape(p.title)}</h3><div class="scene">${escape(p.scene)}</div><div class="action"><b>试试这样做 ↗</b><p>${escape(p.action)}</p></div></section>`).join('')}</div>
+${section('04',data.tipsHeading,'A LITTLE PRACTICE')}<div class="tips">${data.tips.map((t,i)=>`<section class="tip"><span class="tip-num">${String(i+1).padStart(2,'0')}</span><h3>${escape(t.title)}</h3><p>${escape(t.text)}</p></section>`).join('')}</div>
+<section class="blessing"><div class="star" aria-hidden="true">✧</div><small>A WISH FOR BOTH OF YOU</small><h2>${escape(data.blessingHeading)}</h2><p>${escape(data.blessing)}</p></section>
+<details class="formula-details"><summary>查看本次评分规则与解读边界</summary><p>${escape(data.formula)}</p><p>分数仅供娱乐。性别只用于选择友情篇或爱情篇。</p></details><p class="report-meta">生成于 ${escape(new Date(createdAt).toLocaleString('zh-CN',{hour12:false}))} · 双星引力 · 本地生成，未上传个人信息</p>`;}
+function showReport(payload,data,html){
+  if(!linkIsActive()) return;
+  if(!validPayload(payload)) throw new Error('报告信息不完整，请重新填写。');
+  data=data||analyzePayload(payload);
+  current={payload,data,palette:theme(payload.a,payload.b)};
+  $('reportArticle').innerHTML=html||reportMarkup(data,payload);
+  $('homeView').hidden=true;
+  $('resultView').hidden=false;
+  $('quotaText').hidden=true;
+  document.title=reportHeading(payload,data)+' · 双星引力';
+  if(location.hash!=='#report') location.hash='report';
+  window.scrollTo(0,0);
+  $('reportTitle').focus({preventScroll:true});
+}
+
+function showHome(updateHash=true){
+  if(busy || !requireActiveLink()) return;
+  closePoster();
+  $('homeView').hidden=false;
+  $('resultView').hidden=true;
+  delete document.body.dataset.view;
+  $('quotaText').hidden=false;
+  document.title='双星引力 · 看见你们的相处宇宙';
+  if(updateHash && location.hash!=='#home') location.hash='home';
+  window.scrollTo(0,0);
+  refreshQuota();
+}
+
+function linkIsActive(){
+  return Boolean(quotaState?.available && quotaState.admitted && !quotaState.expired && Date.now()<quotaState.expiresAt);
+}
+
+function requireActiveLink(){
+  if(linkIsActive()) return true;
+  refreshQuota();
+  return false;
+}
+
+function showAccessBlocked(title,message){
+  if(!$('expiryView').hidden && $('expiryTitle').textContent===title) return;
+  closePoster();
+  if($('methodDialog').open) $('methodDialog').close();
+  current=null;
+  $('homeView').hidden=true;
+  $('resultView').hidden=true;
+  delete document.body.dataset.view;
+  $('reportArticle').replaceChildren();
+  $('quotaText').hidden=false;
+  $('openMethod').hidden=true;
+  $('expiryTitle').textContent=title;
+  $('expiryMessage').textContent=message;
+  $('expiryView').hidden=false;
+  document.title=title+' · 双星引力';
+  $('expiryTitle').setAttribute('tabindex','-1');
+  $('expiryTitle').focus({preventScroll:true});
+  window.scrollTo(0,0);
+}
+
+function renderQuota(){
+  clearTimeout(quotaTimer);
+  const state=quotaState;
+  const button=$('submitBtn');
+  button.disabled=busy || !linkIsActive();
+  $('quotaText').textContent=state.available ? `还可打开 ${state.remaining} 次` : '次数读取失败';
+  if(!state.available){
+    showAccessBlocked('暂时无法打开',state.error || '本地记录读取失败，请刷新后重试。');
+    return;
+  }
+  if(state.expired){
+    showAccessBlocked('链接已失效','首次打开后的 12 小时有效期已结束。');
+    return;
+  }
+  if(!state.admitted){
+    if(state.remaining===0) showAccessBlocked('打开次数已用完','这条链接在当前浏览器已打开 3 次。如需继续使用，请联系店主领取新链接。');
+    else showAccessBlocked('请重新打开链接',state.error || '当前页面的打开记录已失效。');
+    return;
+  }
+  if(!busy){
+    button.innerHTML=(mode==='self'?'探索我的星球':'探索我们的引力')+'<span aria-hidden="true">↗</span>';
+  }
+  quotaTimer=setTimeout(refreshQuota,Math.max(100,state.expiresAt-Date.now()));
+}
+
+async function refreshQuota(){
+  try{
+    const opening=await admission;
+    quotaState=opening.available ? await Q.status() : opening;
+  }catch(_){
+    quotaState={available:false,remaining:0,error:'本地记录读取失败，请刷新后重试。'};
+  }
+  renderQuota();
+}
+
+async function submit(event){
+  event.preventDefault();
+  if(busy || !requireActiveLink() || !$('affinityForm').reportValidity()) return;
+  busy=true;
+  error('');
+  $('submitBtn').innerHTML='正在解读你们的引力<i class="busy-spinner" aria-hidden="true"></i>';
+  $('submitBtn').disabled=true;
+  try{
+    const a=getPerson('a','你');
+    const createdAt=Date.now();
+    const payload=mode==='self'?{mode:'self',a,createdAt}:{a,b:getPerson('b','对方'),createdAt};
+    const data=analyzePayload(payload);
+    const html=reportMarkup(data,payload);
+    const result=await Q.saveReport(payload);
+    quotaState=result;
+    if(!result.ok) throw new Error(result.error || '暂时无法保存报告。');
+    showReport(payload,data,html);
+  }catch(err){
+    error(err.message || '暂时未能完成解读，请稍后再试。');
+  }finally{
+    busy=false;
+    await refreshQuota();
+  }
+}
+function reportText(){const {data:d,payload:{a,b,createdAt}}=current;const who=p=>`${p.label}：${p.mbti} · ${E.zodiac[p.zodiac].name} · ${genderLabels[p.gender]}\n象征幸运色：${E.mbti[p.mbti].colorName} (${E.mbti[p.mbti].color}) + ${E.zodiac[p.zodiac].colorName} (${E.zodiac[p.zodiac].color})`;return `双星引力 · ${d.relationshipLabel}相处报告\n${new Date(createdAt).toLocaleString('zh-CN')}\n\n${who(a)}\n${who(b)}\n\n${d.title}\n${d.intro}\n${d.scoreLabel}：${d.score}/100（本站娱乐指数，非关系成功率）\n\n【相处观察】\n${d.dimensions.slice(0,3).map(x=>`${x.name} · ${x.tag} · 规则参考值 ${x.score}/100\n${x.text}`).join('\n\n')}\n\n【彼此画像】\n${d.profiles.map(x=>`${x.label}：${x.headline}\n${x.paragraphs.join('\n')}`).join('\n\n')}\n\n【${d.sceneHeading}】\n${d.patterns.map(x=>`${x.title}\n${x.scene}\n试试这样做：${x.action}`).join('\n\n')}\n\n【${d.tipsHeading}】\n${d.tips.map(x=>`${x.title}\n${x.text}`).join('\n\n')}\n\n【${d.blessingHeading}】\n${d.blessing}\n\n【规则与边界】\n${d.formula}\nMBTI 提供偏好线索，星座和分数仅供娱乐。幸运色由本站设计。性别只用于选择友情篇或爱情篇。\n资料：\nhttps://www.myersbriggs.org/my-mbti-personality-type/myers-briggs-overview/\nhttps://www.myersbriggs.org/type-in-my-life/personality-type-and-relationships/\nhttps://www.nature.com/articles/318419a0\n`;}
+function selfReportText(report){
+  const {data,payload}=report;
+  const {a,createdAt}=payload;
+  const mbti=E.mbti[a.mbti],zodiac=E.zodiac[a.zodiac];
+  return [
+    '双星引力 · 个人解读报告',
+    new Date(createdAt).toLocaleString('zh-CN'),
+    `${a.mbti} · ${zodiac.name} · ${genderLabels[a.gender]}`,
+    `象征幸运色 ${mbti.colorName} (${mbti.color}) + ${zodiac.colorName} (${zodiac.color})`,
+    data.title,
+    data.intro,
+    '【个人画像】',
+    data.profile.headline,
+    ...data.profile.paragraphs,
+    '【你在日常里的相处方式】',
+    ...data.dimensions.map(d=>d.name+'\n'+d.text),
+    '【值得聊聊的相处组合】',
+    ...data.matchCombinations.map(match=>match.type+' × '+match.name+' · '+match.title+'\n'+match.reason),
+    data.methodNote,
+    '【给自己的相处练习】',
+    ...data.tips.map(tip=>tip.title+'\n'+tip.text),
+    '【送给你的祝福】',
+    data.blessing,
+    '【资料】',
+    'https://www.myersbriggs.org/my-mbti-personality-type/the-mbti-preferences/',
+    'https://www.myersbriggs.org/type-in-my-life/personality-type-and-relationships/',
+    'https://doi.org/10.1038/318419a0'
+  ].join('\n\n');
+}
+
+function downloadReport(){
+  if(!current || !requireActiveLink()) return;
+  const content=isSelf(current.payload)?selfReportText(current):reportText();
+  const link=document.createElement('a');
+  const url=URL.createObjectURL(new Blob(['\ufeff'+content],{type:'text/plain;charset=utf-8'}));
+  link.href=url;
+  link.download=reportFilename(current,'报告.txt');
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+  toast('文字报告已准备下载。');
+}
+const posterDialog=$('posterDialog');
+let posterRevision=0;
+let posterUrl='';
+let posterShareData=null;
+
+function clearPoster(){
+  $('posterImage').removeAttribute('src');
+  $('downloadPoster').removeAttribute('href');
+  if(posterUrl) URL.revokeObjectURL(posterUrl);
+  posterUrl='';
+  posterShareData=null;
+  $('posterPreview').hidden=true;
+  $('posterActions').hidden=true;
+  $('sharePoster').hidden=true;
+  $('sharePoster').disabled=false;
+}
+
+function closePoster(){
+  if(posterDialog.open) posterDialog.close();
+}
+
+async function openPoster(){
+  if(!current || posterDialog.open || !requireActiveLink()) return;
+  if(typeof posterDialog.showModal!=='function'){
+    toast('请用手机的系统浏览器打开页面，再保存长图。');
+    return;
+  }
+  const report=current;
+  const revision=++posterRevision;
+  clearPoster();
+  $('posterHint').textContent='正在生成完整长图…';
+  posterDialog.showModal();
+  posterDialog.scrollTop=0;
+  const isActive=()=>linkIsActive() && posterDialog.open && revision===posterRevision && report.payload===current?.payload;
+
+  try{
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    if(!isActive()) return;
+    const blob=await globalThis.AffinityPoster.render(report);
+    if(!isActive()) return;
+    if(!blob?.size || blob.type!=='image/png') throw new Error('图片生成失败，请重新尝试。');
+
+    const filename=reportFilename(report,'长图.png');
+    posterUrl=URL.createObjectURL(blob);
+    $('posterImage').src=posterUrl;
+    $('downloadPoster').href=posterUrl;
+    $('downloadPoster').download=filename;
+
+    if(typeof File==='function' && typeof navigator.share==='function' && typeof navigator.canShare==='function'){
+      try{
+        const file=new File([blob],filename,{type:'image/png'});
+        const shareData={files:[file],title:'双星引力 · '+reportHeading(report.payload,report.data)};
+        if(navigator.canShare(shareData)) posterShareData=shareData;
+      }catch(_){}
+    }
+    $('sharePoster').hidden=!posterShareData;
+    $('posterPreview').hidden=false;
+    $('posterActions').hidden=false;
+    $('posterHint').textContent='手机可长按下方图片保存，也可以下载 PNG。';
+  }catch(error){
+    if(isActive()){
+      clearPoster();
+      $('posterHint').textContent=error.message || '长图生成失败，请关闭预览后重试。';
+    }
+  }
+}
+
+async function sharePoster(){
+  const shareData=posterShareData;
+  if(!shareData || !requireActiveLink()) return;
+  $('sharePoster').disabled=true;
+  try{
+    await navigator.share(shareData);
+  }catch(error){
+    if(error.name!=='AbortError' && shareData===posterShareData){
+      $('posterHint').textContent='可以长按下方图片保存，或点击「下载 PNG」。';
+    }
+  }finally{
+    if(shareData===posterShareData) $('sharePoster').disabled=false;
+  }
+}
+
+$('savePoster').addEventListener('click',openPoster);
+$('closePoster').addEventListener('click',closePoster);
+$('sharePoster').addEventListener('click',sharePoster);
+$('downloadPoster').addEventListener('click',event=>{
+  if(!requireActiveLink()) event.preventDefault();
+});
+posterDialog.addEventListener('close',()=>{
+  if(posterDialog.open) return;
+  posterRevision++;
+  clearPoster();
+});
+$('posterImage').addEventListener('error',()=>{
+  if(posterDialog.open && posterUrl){
+    $('posterHint').textContent='预览加载失败，可以点击「下载 PNG」保存长图。';
+  }
+});
+
+async function restoreReport(){
+  await refreshQuota();
+  if(!linkIsActive() || location.hash!=='#report') return;
+  try{
+    const payload=current?.payload || await Q.latest();
+    if(!linkIsActive() || location.hash!=='#report') return;
+    if(!validPayload(payload)){
+      showHome();
+      return;
+    }
+    restoreFields(payload);
+    showReport(payload,current?.data);
+  }catch(_){
+    showHome();
+  }
+}
+
+async function initializePage(){
+  await refreshQuota();
+  if(!linkIsActive()) return;
+  if(location.hash==='#report') await restoreReport();
+  else $('homeView').hidden=false;
+}
+
+fillOptions();
+legends();
+$('chooseSelf').addEventListener('click',()=>selectMode('self'));
+$('choosePair').addEventListener('click',()=>selectMode('pair'));
+$('affinityForm').addEventListener('submit',submit);
+for(const id of ['brandHome','backHome','tryAgain']) $(id).addEventListener('click',()=>showHome());
+$('openMethod').addEventListener('click',()=>$('methodDialog').showModal());
+$('closeMethod').addEventListener('click',()=>$('methodDialog').close());
+$('methodDialog').addEventListener('click',event=>{
+  if(event.target!==$('methodDialog')) return;
+  const box=$('methodDialog').getBoundingClientRect();
+  if(event.clientX<box.left || event.clientX>box.right || event.clientY<box.top || event.clientY>box.bottom){
+    $('methodDialog').close();
+  }
+});
+$('saveText').addEventListener('click',downloadReport);
+$('printReport').addEventListener('click',()=>{if(requireActiveLink()) window.print();});
+window.addEventListener('hashchange',()=>{
+  if(location.hash==='#report'){
+    if($('resultView').hidden) restoreReport();
+  }else if(!$('resultView').hidden){
+    showHome(false);
+  }
+});
+const admission=Q.open();
+window.addEventListener('focus',refreshQuota);
+window.addEventListener('pageshow',event=>{if(event.persisted) refreshQuota();});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden) refreshQuota();});
+if(Q.subscribe) Q.subscribe(refreshQuota);
+setInterval(refreshQuota,30000);
+initializePage();
+})();
+</script>
+</body>
+</html>
+
+
+
